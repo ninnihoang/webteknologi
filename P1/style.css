@@ -1,15 +1,13 @@
 body {
-
+    width: 600px;
+    margin: auto;
+    padding: 50px 0px;
+    font-family: sans-serif;
+    line-height: 150%;
 }
 
-div {
+div {}
 
-}
+h2 {}
 
-h2 {
-
-}
-
-p {
-
-}
+p {}
