@@ -42,27 +42,28 @@
         
         <div>
             <label for="telephone">Telefonnummer * </label>
-            <input type="text" name="telephone" id="telephone" required>
+            <input type="tel" name="telephone" id="telephone" pattern="[+0-9]{8,}" required>
         </div>
         
         <div>
             <label for="email">E-post * </label>
-            <input type="text" name="email" id="email" required>
+            <input type="email" name="email" id="email" placeholder="eksempel@gmail.com" required>
         </div>
         
         <div>
             <label for="website">Nettside </label>
-            <input type="text" name="website" id="website">
+            <input type="url" name="website" id="website" placeholder="http://www.eksempel.com">
         </div>
         
         <div>
             <p><b>NB</b> Alle søknader blir behandlet konfidensielt. Hver enkelt søknad vurderes fortløpende ut i fra om vi har kapasitet og hva vi tror egner seg for en engasjerende workshop. Vær OBS på at det kan ta tid fra mottatt søknad, til en eventuell workshop finner sted, da vi har en viss pågang. Hovedregelen er at første workshop er gratis, men for større oppdrag tar vi et honorar.</p>
         </div>
         
-        <button type="submit" name="button" class="buttonPink">Send inn</button>
+        <button type="submit" name="button" class="buttonPink" id="submit">Send inn</button>
         
     </form>
     
+    <script src="scripts/validateForms.js"></script>
 </body>
 
 </html>
