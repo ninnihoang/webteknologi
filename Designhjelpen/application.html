@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Application </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <!-- Fyll inn html for navbar her -->
+  <h1> Bli med </h1>
+  <p>
+    Som industridesigner er en av de viktigste egenskapene å
+    kunne forme og jobbe med idéskaping.
+    Designhjelpen er en gruppe ID-studenter som organiserer såkalt workshops,
+    arrangement hvor bedrifter og start-ups samarbeider om designhjelp og nye ideer.
+    Alle ved ID er kvalifisert til å søke seg inn i Designhjelpen.
+  </p>
+
+  <p>
+    Å være med i Designhjelpen gir en nyttig og relevant erfaring
+     som du ellers ikke ville oppnådd gjennom studiet ved ID.
+     Gjennom Designhjelpen kommer man også tett innpå gründermiljøet og
+     danner et verdifullt nettverk. Som medlem i styret lærer du hvordan man
+      leder en workshop, og får ta del i et hyggelig fellesskap med resten av styret.
+  </p>
+
+  <form action="" method="post" id="formApplication">
+    <div>
+      <label for="name"> Navn* </label>
+      <input type="text" name="name" value="" required>
+    </div>
+
+    <div>
+      <label for="email"> Epost* </label>
+      <input type="email" name="email" required>
+    </div>
+
+    <div>
+      <label for="class"> Klassetrinn </label>
+      <input type="number" name="class" min="1" max="5" >
+    </div>
+
+    <div>
+      <label for="about"> Skriv litt om deg selv </label>
+      <textarea name="about" rows="3" cols="30"> </textarea>
+    </div>
+
+    <div>
+      <button type="submit" name="button" class="buttonGreen"> Bli med </button>
+    </div>
+  </form>
+</body>
+
+</html>
