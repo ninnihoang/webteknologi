@@ -1,45 +1,94 @@
 <!DOCTYPE html>
-<html lang="no">
-    <head>
-        <title>Blogg</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css">
-    </head>
-    
-    <body>
-        <h1>Blogg</h1>
-        <div class="blogblock">
-             <img class="blogthumb_left" src="img/blog1_img2.JPG" alt= "bloggbilde1">
-            <a href="blogpost1.html">
-                <div class="blogtext_right">
-                    <h2>Flare</h2>
-                    <p>Flare er en trygghets app som skal alarmere personer i nærheten når du er i fare. Workshopen med Designhjelpen hadde som mål å utforske hvordan teknologien bak appen kunne brukes i andre situasjoner.</p>
-                </div>
-            </a>
-           
+<html lang="nb">
+<head>
+    <title>Blogg</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="navigation bold">
+            <li class="two"><a href="home.html"><img src="img/logo.png" id='homeLogo' alt="Designhjelpen"></a></li>
+            <li class="one"><a href="what.html">Hva vi gjør</a></li>
+            <li class="one"><a href="who.html">Hvem vi er</a></li>
+            <li class="one"><a href="contact.html">Kontakt</a></li>
+            <li class="one"><a href="workshop.html">Søk om workshop</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="boxWhite">
+            <div class="side"></div>
+            <div class="middle">
+                <h1>Blogg</h1>
+            </div>
+            <div class="side"></div>
         </div>
-        
-        <div class="blogblock">
-            <a href="blogpost2.html">
-                <div class="blogtext_left">
-                    <h2>MovieMask</h2>
-                    <p>MovieMask har utviklet en 2D skjermbrille som gir deg kinoopplevelsen hvor som helst, når som helst. Idéen går ut på å legge mobilen i en “box” og bruke spesialdesignede linser som forstørrer bildet og gir deg kinofølselsen. </p>
+
+        <div class="boxGrey">
+            <div class="side"></div>
+            <div class="middle">
+                <div class="left">
+                    <img class="imageBlog" src="img/blog/blog1_img2.JPG" alt= "bloggbilde1">
                 </div>
-            </a>
-            <img class="blogthumb_right" src="img/blog2_img2.JPG" alt= "bloggbilde2">
-        </div>
-        
-        <div class="blogblock">
-            <img class="blogthumb_left" src="img/blog3_img3.JPG" alt= "bloggbilde3">
-            <a href="blogpost3.html">
-                <div class="blogtext_right">
-                    <h2>Meieriparken</h2>
-                    <p>Meieriparken er en park i Ørlandet kommune. Denne skal ved hjelp av en sceneinstallasjon bli en naturlig møteplass for kommunens innbyggere. Både scenen og området rundt trenger en funksjonabel og tiltrekkende løsning. Hvordan kan vi skape et atraktivt byrom som oppfordrer til bruk?</p>
+                <div>
+                    <a class="column right" href="blogpost1.html">
+                        <h2>Flare</h2>
+                        <p class="right">Flare er en trygghets app som skal alarmere personer i nærheten når du er i fare. Workshopen med Designhjelpen hadde som mål å utforske hvordan teknologien bak appen kunne brukes i andre situasjoner.</p>
+                    </a>
                 </div>
-            </a>
-            
+            </div>
+            <div class="side"></div>
         </div>
-        
-    </body>
+
+        <div class="boxWhite">
+            <div class="side"></div>
+            <div class="middle">
+                <div class="left">
+                    <a href="blogpost2.html">
+                        <h2>MovieMask</h2>
+                        <p>MovieMask har utviklet en 2D skjermbrille som gir deg kinoopplevelsen hvor som helst, når som helst. Idéen går ut på å legge mobilen i en “box” og bruke spesialdesignede linser som forstørrer bildet og gir deg kinofølselsen. </p>
+                    </a>
+                </div>
+                <div class="right">
+                    <img class="imageBlog" src="img/blog/blog2_img2.JPG" alt= "bloggbilde2">
+                </div>
+            </div>
+            <div class="side"></div>
+        </div>
+
+        <div class="boxGrey">
+            <div class="side"></div>
+            <div class="middle">
+                <div class="left">
+                    <img class="imageBlog" src="img/blog/blog3_img3.JPG" alt= "bloggbilde3">
+                </div>
+                <div class="right">
+                    <a class="column right" href="blogpost3.html">
+                        <h2>Meieriparken</h2>
+                        <p class="right">Meieriparken er en park i Ørlandet kommune. Denne skal ved hjelp av en sceneinstallasjon bli en naturlig møteplass for kommunens innbyggere. Både scenen og området rundt trenger en funksjonabel og tiltrekkende løsning. Hvordan kan vi skape et atraktivt byrom som oppfordrer til bruk?</p>
+                    </a>
+                </div>
+            </div>
+            <div class="side"></div>
+        </div>
+        <div class="spacerGrey"></div>
+        <footer>
+            <div id="footerTop">
+                <img src="img/logoSmall.png" id="logoBlack" alt="designhjelpen logo">
+            </div>
+            <div id="footerSocial">
+                <a href="https://www.facebook.com/Designhjelpen/" target="_blank" id="facebook"><img src="img/facebookWhite.png" alt="facebook logo" ></a>
+                <a href="https://www.instagram.com/designhjelpen/" target="_blank" id="instagram"><img src="img/instaWhite.png" alt="instagram logo"></a>
+                <a href="" id="twitter"><img src="img/twitterWhite.png" alt="twitter logo"></a>
+            </div>
+            <div>
+                <p class="footerText">© 2017 Designhjelpen</p>
+            </div>
+        </footer>
+    </div>
+</body>
 
 </html>
