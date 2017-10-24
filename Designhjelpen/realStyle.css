@@ -1,0 +1,105 @@
+@@import url('https://fonts.googleapis.com/css?family=Oswald');
+html {
+
+}
+
+body {
+
+}
+
+/* text */
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+h1.headerCenter {
+
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+h3 {
+
+}
+
+p {
+  font-family: verdana, sans-serif;
+  font-size: 26px;
+}
+
+p.lead {
+  font-family: verdana, sans-serif;
+  font-size: 36px;
+}
+/* lists */
+li {
+
+}
+
+ul {
+
+}
+
+/* images */
+img {
+
+}
+/* sections */
+footer{
+
+}
+
+/* forms */
+form {
+
+}
+
+label {
+
+}
+
+textarea {
+
+}
+
+/* classes */
+.bold {
+  font-weight: bold;
+}
+
+.boxGrey { /* grey background box for certain parts of the website */
+
+}
+
+.buttonGreen { /* styling for the "bli med" button */
+
+}
+
+.buttonPink { /* styling for the "søk om workshop" button */
+
+}
+
+.linkBlue {   /* blue link on what.html */
+
+}
+
+.navbar {
+  color: #3B3A3A;
+  position: sticky;
+}
+
+
+/* IDs */
+# formApplication { 
+
+}
+
+# formWorkshop {
+
+}

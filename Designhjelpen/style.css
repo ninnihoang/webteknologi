@@ -22,8 +22,7 @@ body {
 .blogthumb_left{
     width: 300px;
     padding: 20px;
-    float: left;
-    
+    float: left;   
 }
 
 .blogtext_left {
@@ -40,6 +39,12 @@ body {
     
 }
 
-
-
+.bloggbilde_1{
+    
+    width: 700px;
+    padding: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+    position: relative;
+}
 /*  Slutt Kode til blogginnlegg og bloggside */
