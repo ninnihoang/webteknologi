@@ -26,8 +26,6 @@ function formValidation() {
     }
     console.log(contact);
     console.log(document.getElementById("contact"));
-    
-    console.log("gittest");
 }
 
 document.getElementById('submit').addEventListener('click', formValidation)
