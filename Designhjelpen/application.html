@@ -1,55 +1,85 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="nb">
 <head>
-  <title> Application </title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="">
+  <title> Designhjelpen | Application </title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Fyll inn html for navbar her -->
-  <h1> Bli med </h1>
-  <p>
-    Som industridesigner er en av de viktigste egenskapene å
-    kunne forme og jobbe med idéskaping.
-    Designhjelpen er en gruppe ID-studenter som organiserer såkalt workshops,
-    arrangement hvor bedrifter og start-ups samarbeider om designhjelp og nye ideer.
-    Alle ved ID er kvalifisert til å søke seg inn i Designhjelpen.
-  </p>
+  <nav>
+    <ul class="navigation bold">
+      <li class="two"><a href="home.html"><img src="img/logo.png" id='homeLogo' alt="Designhjelpen"></a></li>
+      <li class="one"><a href="what.html">Hva vi gjør</a></li>
+      <li class="one"><a href="who.html">Hvem vi er</a></li>
+      <li class="one"><a href="contact.html">Kontakt</a></li>
+      <li class="one"><a href="workshop.html">Søk om workshop</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="side"></div>
+    <div class="middle column">
+      <div class="left">
+        <h1> Bli med </h1>
+      </div>
+      <p>
+        Som industridesigner er en av de viktigste egenskapene å
+        kunne forme og jobbe med idéskaping.
+        Designhjelpen er en gruppe ID-studenter som organiserer såkalt workshops,
+        arrangement hvor bedrifter og start-ups samarbeider om designhjelp og nye ideer.
+        Alle ved ID er kvalifisert til å søke seg inn i Designhjelpen.
+      </p>
 
-  <p>
-    Å være med i Designhjelpen gir en nyttig og relevant erfaring
-     som du ellers ikke ville oppnådd gjennom studiet ved ID.
-     Gjennom Designhjelpen kommer man også tett innpå gründermiljøet og
-     danner et verdifullt nettverk. Som medlem i styret lærer du hvordan man
-      leder en workshop, og får ta del i et hyggelig fellesskap med resten av styret.
-  </p>
+      <p>
+        Å være med i Designhjelpen gir en nyttig og relevant erfaring
+        som du ellers ikke ville oppnådd gjennom studiet ved ID.
+        Gjennom Designhjelpen kommer man også tett innpå gründermiljøet og
+        danner et verdifullt nettverk. Som medlem i styret lærer du hvordan man
+        leder en workshop, og får ta del i et hyggelig fellesskap med resten av styret.
+      </p>
 
-  <form action="" method="post" id="formApplication">
-    <div>
-      <label for="name"> Navn* </label>
-      <input type="text" name="name" value="" required>
+      <form method="post" id="formApplication">
+        <div class="formItem">
+          <input type="text" name="name" id="name" required>
+          <span class="bar"></span>
+          <label for="name"> Navn* </label>
+        </div>
+
+        <div class="formItem">
+          <input type="email" name="email" id="email" required>
+          <span class="bar"></span>
+          <label for="email"> E-post* </label>
+        </div>
+
+        <div class="formItem">
+          <input type="text" name="class" id="class">
+          <span class="bar"></span>
+          <label for="class"> Klassetrinn </label>
+        </div>
+
+        <div class="formItem">
+          <textarea name="about" id="about" rows="3" cols="30"> </textarea>
+          <label for="about"> Skriv litt om deg selv </label>
+        </div>
+        <div class="buttonSubmit">
+          <button type="submit" name="button" class="buttonGreen">Bli med</button>
+        </div>
+      </form>
     </div>
-
-    <div>
-      <label for="email"> Epost* </label>
-      <input type="email" name="email" required>
+    <div class="side"></div>
+  </div>
+  <footer>
+    <div id="footerTop">
+      <img src="img/logoSmall.png" id="logoBlack" alt="designhjelpen logo">
     </div>
-
-    <div>
-      <label for="class"> Klassetrinn </label>
-      <input type="number" name="class" min="1" max="5" >
+    <div id="footerSocial">
+      <a href="https://www.facebook.com/Designhjelpen/" target="_blank" id="facebook"><img src="img/facebookWhite.png" alt="facebook logo"></a>
+      <a href="https://www.instagram.com/designhjelpen/" target="_blank" id="instagram"><img src="img/instaWhite.png" alt="instagram logo"></a>
+      <a href="" id="twitter"><img src="img/twitterWhite.png" alt="twitter logo"></a>
     </div>
-
     <div>
-      <label for="about"> Skriv litt om deg selv </label>
-      <textarea name="about" rows="3" cols="30"> </textarea>
+      <p class="footerText">© 2017 Designhjelpen</p>
     </div>
-
-    <div>
-      <button type="submit" name="button" class="buttonGreen"> Bli med </button>
-    </div>
-  </form>
+  </footer>
 </body>
 
 </html>
