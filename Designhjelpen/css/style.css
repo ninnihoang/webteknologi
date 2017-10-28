@@ -76,11 +76,15 @@ p.textCenter {
 p, a, input, label, textarea{
 	font-family: verdana, sans-serif;
 }
-
+/*                                                                  TABLES                                          */
 td {
 	font-family: verdana, sans-serif;
-	font-size: 26px;
 	position: relative;
+}
+
+tr {
+	border-collapse: separate;
+	border-spacing: 10px 15px;
 }
 
 /*                                                                  LISTS                                           */
@@ -158,8 +162,9 @@ nav {
 	align-content: center;
 	position: sticky;
 	border: none;
+	top: 0;
 	width: 100%;
-	z-index: 2;
+	z-index: 99;
 }
 
 .alignCenter {
@@ -257,7 +262,7 @@ nav {
 }
 
 .buttonLink {
-	padding: 100px 0;
+	padding: 100px 0 0 0;
 }
 
 .buttonLink, .buttonSubmit {
@@ -308,9 +313,9 @@ nav {
 }
 
 .imageSmall {
-	max-height: 250px;
-	max-width: 250px;
-	padding-right: 15%;
+	max-height: 250px; /* var 250px */
+	max-width: 12vw;	/* var 250px */
+	padding-right: 15%; 
 }
 
 .lead {
@@ -395,6 +400,12 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.textTable {
+	max-width: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .textGreen { color: #DAE25C; }
