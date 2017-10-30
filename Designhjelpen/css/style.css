@@ -38,11 +38,11 @@ a:link, a:visited, a:active {
 }
 
 h1 {
-	font-size: calc(20px + 5vw); /* var 100px, deretter 8vw */
+	font-size: calc(20px + 4vw); /* var 100px, deretter 8vw */
 }
 
 h2 {
-	font-size: 4.1vw; /* var 56px */
+	font-size: 3.2vw; /* var 56px */
 	margin-top: 0;
 }
 
@@ -57,7 +57,7 @@ h1, h2, h3, p, label, input, td, textarea, #skill {
 }
 
 p {
-	font-size:calc(8px + .9vw); /* var 26px */
+	font-size:calc(8px + .8vw); /* var 26px */
 	line-height: 1.5;
 	max-width: 75%;
 	text-align: left;
@@ -79,7 +79,7 @@ p.textCenter {
 	text-align: justify;
 }
 
-p, a, input, label, textarea{
+p, a, input, label, li, textarea{
 	font-family: verdana, sans-serif;
 }
 /*                                                                  TABLES                                          */
@@ -96,6 +96,10 @@ tr {
 /*                                                                  LISTS                                           */
 li {
 	padding: 2% 1em;
+}
+
+ul {
+	list-style: none;
 }
 
 /*                                                                  FORMS                                           */
@@ -216,9 +220,9 @@ nav {
 .bigNumber {
 	color: #DAE25C;
 	font-family: 'Oswald' , sans-serif;
-	font-size: 200px;
+	font-size: 13vw; /* var 200px */
 	font-weight: bold;
-	margin: 0 100px;
+	margin: 0 10vw;
 	position: relative;
 	-webkit-box-pack: end;
 	    -ms-flex-pack: end;
@@ -355,13 +359,13 @@ nav {
 }
 
 .imageBlog {
-	max-width: 40vw; /* var width: 100%; */
-	max-height: 32vh; /* var height: 100%; */
+	max-width: 60vw; /* var width: 100%; */
+	height: 34vh; /* var height: 100%; */
 }
 
-.imageCenter {
+.imageCenter { /* 16/9 ratio */
 	max-width: 60vw;
-	height: 42vh;
+	height: 34vh; /* var 42vh */
 }
 .imageMedium {
 	max-height: auto; /* var 500px */
@@ -510,6 +514,9 @@ nav {
 	        justify-content: center;
 }
 
+.textBlog {
+	max-width: 60%;
+}
 .textTable {
 	max-width: 100%;
 	margin-top: 0;
@@ -522,7 +529,7 @@ nav {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 60%;
+	max-width: 75%; /* var 60% */
 }
 
 .textWhite { color: #FFF; }
