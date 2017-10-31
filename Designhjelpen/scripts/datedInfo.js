@@ -1,5 +1,4 @@
 function showHide(){
-    
           
     var div_one = document.getElementById('bliMed');
     var current = new Date();
