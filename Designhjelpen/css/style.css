@@ -672,3 +672,8 @@ nav {
 	top: -80px;
 	right: -25px;
 }
+
+#changePhotos {
+	width: 350px;
+	height: auto;
+}
