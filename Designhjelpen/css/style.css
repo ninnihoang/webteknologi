@@ -397,7 +397,8 @@ nav {
 .imageSmall {
 	max-height: 250px; /* var 250px */
 	max-width: 12vw;	/* var 250px */
-	padding-right: 15%;
+    margin: 1.5vw 1.5vw 1.5vw 0vw;
+    border-radius: 50%; /* rounded images */
 }
 
 .lead {
@@ -540,6 +541,7 @@ nav {
 	max-width: 100%;
 	margin-top: 0;
 	margin-bottom: 0;
+    margin-right: 3vw;
 }
 
 .textGreen { color: #DAE25C; }
