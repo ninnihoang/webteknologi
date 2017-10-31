@@ -196,7 +196,7 @@ nav {
 	width: 100%;
 	z-index: 99;
 }
-
+/*                                                                 CLASSES                                         */
 .alignCenter {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -294,7 +294,6 @@ nav {
 .buttonPink:hover { background-color: #3B3B3B; }
 
 .buttonGreen, .buttonPink, .buttonGrey { /* general styling of buttons */
-	/* position: relative; */
 	border: none;
 	border-radius: 10vw; /* var 50px */
 	color:#FFF;
@@ -398,7 +397,7 @@ nav {
 .imageSmall {
 	max-height: 250px; /* var 250px */
 	max-width: 12vw;	/* var 250px */
-	padding-right: 15%; 
+	padding-right: 15%;
 }
 
 .lead {
@@ -430,7 +429,7 @@ nav {
 
 .navigation {
 	list-style: none;
-	margin: 0;
+	margin: -5px;
 	padding: 0;
 	background-color: #3B3B3B;
 	color: #FFF;
@@ -536,6 +535,7 @@ nav {
 .textBlog {
 	max-width: 60%;
 }
+
 .textTable {
 	max-width: 100%;
 	margin-top: 0;
@@ -605,7 +605,11 @@ nav {
 	padding: 0;
 }
 
-#imageHeader>img { max-width: 100%; }
+#imageHeader>img {
+	 max-width: 100%;
+	 height: 100%;
+	 object-fit: cover;
+}
 
 #imageText {
 	left: 50%;
@@ -638,7 +642,7 @@ nav {
 
 #postIt {
 	background:#fefabc;
-	padding:0 0 20vh 0; /* var 0 0 300px 0 */
+	padding:0 0 20vh 0; /* var 0 0 300px 0,    kan endres til 0 0 15vh 0 */
 	font-family: 'Gloria Hallelujah', cursive;
 	font-size:calc(12px + 0.9vw); /* var 26px */
 	color: #000;
@@ -657,8 +661,8 @@ nav {
 	left: 50%;
 	-webkit-transform: translate(-50%, 100%);
 	    -ms-transform: translate(-50%, 100%);
-	        transform: translate(-50%, 100%);
-	padding: 10px 30px;
+	        transform: translate(-50%, 100%); /* kan endres til (-50%, 60%) */
+	padding: 10px 30px;	/* 0 1vw */
 }
 
 #twitter img{
