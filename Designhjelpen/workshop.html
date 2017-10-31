@@ -25,7 +25,7 @@
             <h1 class="headerLeft">Søk om Workshop</h1>
             <form action="/" method="post" id="formWorkshop">
                 <div class="formItem">
-                    <input type="text" name="name" id="name" required>
+                    <input type="text" name="name" id="name">
                     <span class="bar"></span>
                     <label for="name">Navn på prosjektet </label>
                 </div>
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="formItem">
-                    <input type="tel" name="telephone" id="telephone" required>
+                    <input type="tel" name="telephone" id="telephone" pattern="[0-9]{8}" required>
                     <span class="bar"></span>
                     <label for="telephone">Telefonnummer * </label>
                 </div>

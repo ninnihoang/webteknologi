@@ -1,16 +1,12 @@
-var name,
-    telephone,
-    email,
-    website;
+var contact = document.getElementById("contact");
+var telephone = document.getElementById("telephone");
+var email = document.getElementById("email");
+var website = document.getElementById("website");
 
-contact = document.getElementById("contact");
-telephone = document.getElementById("telephone");
-email = document.getElementById("email");
-website = document.getElementById("website");
 
 function formValidation() {
     if (contact.checkValidity() === false) {
-        alert("Vennligst fyll inn et navn");
+        alert("Vennligst fyll inn et gyldig navn");
         contact.focus();
     } else if (telephone.checkValidity() === false) {
         alert("Vennligst fyll inn et gyldig telefonnummer");
@@ -24,8 +20,7 @@ function formValidation() {
     } else {
         alert("Takk for din henvendelse! \n Vi vil kontakte deg så fort som mulig!")
     }
-    console.log(contact);
-    console.log(document.getElementById("contact"));
 }
+
 
 document.getElementById('submit').addEventListener('click', formValidation)

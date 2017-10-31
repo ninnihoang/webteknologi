@@ -114,6 +114,25 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 	width:100%;
 }
 
+/* invalid state – Ninni */
+input:valid ~ .bar:before, input:valid ~ .bar:after {
+    background: green;
+}
+
+input:invalid {
+    border-bottom: 3px solid red;
+}
+
+input:invalid ~ .bar:before, input:invalid ~ .bar:after {
+    background: red;
+}
+
+input:required:invalid {
+    border-bottom: 3px solid #EEEEEE;
+}
+
+/* --– Ninni --- */
+
 label { 
 	font-size:22px;
 	font-weight:bold;
