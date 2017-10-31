@@ -9,105 +9,107 @@
 
 <body>
 
-	<nav>
-		<ul class="navigation bold">
-			<li class="two"><a href="home.html"><img src="img/logo.png" id='homeLogo' alt="Designhjelpen"></a></li>
-			<li class="one"><a href="what.html">Hva vi gjør</a></li>
-			<li class="one"><a href="who.html">Hvem vi er</a></li>
-			<li class="one"><a href="contact.html">Kontakt</a></li>
-			<li class="one"><a href="workshop.html">Søk om workshop</a></li>
-		</ul>
-	</nav>
+    <nav>
+        <ul class="navigation bold">
+            <li class="two"><a href="home.html"><img src="img/logo.png" id='homeLogo' alt="Designhjelpen"></a></li>
+            <li class="one"><a href="what.html">Hva vi gjør</a></li>
+            <li class="one"><a href="who.html">Hvem vi er</a></li>
+            <li class="one"><a href="contact.html">Kontakt</a></li>
+            <li class="one"><a href="workshop.html">Søk om workshop</a></li>
+        </ul>
+    </nav>
 
-	<div class="container">
-		<div class="boxWhite">
-			<div class="side"></div>
-			<div class="middle">
-				<h1 class="headerLeft">Søk om Workshop</h1>
-			</div>
-			<div class="side"></div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="side"></div>
-		<div class="middle column">
-			<form action="/" method="post" id="formWorkshop">
-				<div class="formItem">
-					<input type="text" name="name" id="name" required>
-					<span class="bar"></span>
-					<label for="name">Navn på prosjektet </label>
-				</div>
+    <div class="container">
+        <div class="boxWhite">
+            <div class="side"></div>
+            <div class="middle">
+                <h1 class="headerLeft">Søk om Workshop</h1>
+            </div>
+            <div class="side"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="side"></div>
+        <div class="middle column">
+            <form action="/" method="post" id="formWorkshop">
+                <div class="formItem">
+                    <input type="text" name="name" id="name">
+                    <span class="bar"></span>
+                    <label for="name">Navn på prosjektet </label>
+                </div>
 
-				<div class="formItem">
-					<label for="who">Hvem er dere? </label>
-					<textarea name="who" id="who" rows="3" cols="30"></textarea>
-				</div>
+                <div class="formItem">
+                    <label for="who">Hvem er dere? </label>
+                    <textarea name="who" id="who" rows="3" cols="30"></textarea>
+                </div>
 
-				<div class="formItem">
-					<label for="what">Hva går prosjektet ut på? </label>
-					<textarea name="what" id="what" rows="3" cols="30"></textarea>
-				</div>
+                <div class="formItem">
+                    <label for="what">Hva går prosjektet ut på? </label>
+                    <textarea name="what" id="what" rows="3" cols="30"></textarea>
+                </div>
 
-				<div class="formItem">
-					<label for="progress">Hvor langt har dere kommet i prosjektet? </label>
-					<textarea name="progress" id="progress" rows="3" cols="30"></textarea>
-				</div>
+                <div class="formItem">
+                    <label for="progress">Hvor langt har dere kommet i prosjektet? </label>
+                    <textarea name="progress" id="progress" rows="3" cols="30"></textarea>
+                </div>
 
-				<div class="formItem">
-					<label for="help">Hva ønsker dere hjelp til? </label>
-					<textarea name="help" id="help" rows="3" cols="30"></textarea>
-				</div>
+                <div class="formItem">
+                    <label for="help">Hva ønsker dere hjelp til? </label>
+                    <textarea name="help" id="help" rows="3" cols="30"></textarea>
+                </div>
 
-				<div class="formItem">
-					<input type="text" name="contact" id="contact" required>
-					<span class="bar"></span>
-					<label for="contact">Kontaktperson * </label>
-				</div>
+                <div class="formItem">
+                    <input type="text" name="contact" id="contact" required>
+                    <span class="bar"></span>
+                    <label for="contact">Kontaktperson * </label>
+                </div>
 
-				<div class="formItem">
-					<input type="text" name="telephone" id="telephone" required>
-					<span class="bar"></span>
-					<label for="telephone">Telefonnummer * </label>
-				</div>
+                <div class="formItem">
+                    <input type="text" name="telephone" id="telephone" pattern="[0-9]{8}" required>
+                    <span class="bar"></span>
+                    <label for="telephone">Telefonnummer * </label>
+                </div>
 
-				<div class="formItem">
-					<input type="email" name="email" id="email" required> <!-- Skal vi ha farget understrek og "google effekt"? -->
-					<span class="bar"></span>
-					<label for="email">E-post * </label>
-				</div>
+                <div class="formItem">
+                    <input type="email" name="email" id="email" required>
+                    <span class="bar"></span>
+                    <label for="email">E-post * </label>
+                </div>
 
-				<div class="formItem">
-					<input type="text" name="website" id="website">
-					<span class="bar"></span>
-					<label for="website">Nettside </label>
-				</div>
+                <div class="formItem">
+                    <input type="url" name="website" id="website" placeholder="http://">
+                    <span class="bar"></span>
+                    <label for="website">Nettside </label>
+                </div>
 
-				<div>
-					<p class="textCenter"><b>NB</b> Alle søknader blir behandlet konfidensielt. Hver enkelt søknad vurderes fortløpende ut i fra om vi har kapasitet og hva vi tror egner seg for en engasjerende workshop. Vær OBS på at det kan ta tid fra mottatt søknad, til en eventuell workshop finner sted, da vi har en viss pågang. Hovedregelen er at første workshop er gratis, men for større oppdrag tar vi et honorar.</p>
-				</div>
+                <div>
+                    <p class="textCenter"><b>NB</b> Alle søknader blir behandlet konfidensielt. Hver enkelt søknad vurderes fortløpende ut i fra om vi har kapasitet og hva vi tror egner seg for en engasjerende workshop. Vær OBS på at det kan ta tid fra mottatt søknad, til en eventuell workshop finner sted, da vi har en viss pågang. Hovedregelen er at første workshop er gratis, men for større oppdrag tar vi et honorar.</p>
+                </div>
 
-				<div class="buttonSubmit">
-					<button type="submit" name="button" class="buttonPink">Send inn</button>
-				</div>
-			</form>
-		</div>
-		<div class="side"></div>
-	</div>
+                <div class="buttonSubmit">
+                    <button type="submit" name="submit" class="buttonPink" id="submit">Send inn</button>
+                </div>
+            </form>
+        </div>
+        <div class="side"></div>
+    </div>
 
-	<footer>
-		<div id="footerTop">
-			<a href="home.html"> <img src="img/logoSmall.png" id="logoBlack" alt="designhjelpen logo"></a>
-		</div>
-		<div id="footerSocial">
-			<a href="https://www.facebook.com/Designhjelpen/" target="_blank" id="facebook"><img src="img/facebookWhite.png" alt="facebook logo"></a>
-			<a href="https://www.instagram.com/designhjelpen/" target="_blank" id="instagram"><img src="img/instaWhite.png" alt="instagram logo"></a>
-			<a href="https://twitter.com/DesignHjelpen" target="_blank" id="twitter"><img src="img/twitterWhite.png" alt="twitter logo"></a>
-		</div>
-		<div>
-			<p class="footerText">© 2017 Designhjelpen</p>
-		</div>
-	</footer>
-	<script src="scripts/validateForms.js"></script>
+    <footer>
+        <div id="footerTop">
+            <a href="home.html"> <img src="img/logoSmall.png" id="logoBlack" alt="designhjelpen logo"></a>
+        </div>
+        <div id="footerSocial">
+            <a href="https://www.facebook.com/Designhjelpen/" target="_blank" id="facebook"><img src="img/facebookWhite.png" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/designhjelpen/" target="_blank" id="instagram"><img src="img/instaWhite.png" alt="instagram logo"></a>
+            <a href="https://twitter.com/DesignHjelpen" target="_blank" id="twitter"><img src="img/twitterWhite.png" alt="twitter logo"></a>
+        </div>
+        <div>
+            <p class="footerText">© 2017 Designhjelpen</p>
+        </div>
+    </footer>
+
+    <script src="scripts/validateForms.js"></script>
+
 </body>
 
 </html>
