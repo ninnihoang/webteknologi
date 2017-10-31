@@ -19,12 +19,20 @@
     </nav>
 
     <div class="container">
+        <div class="boxWhite">
+            <div class="side"></div>
+            <div class="middle">
+                <h1 class="headerLeft">Søk om Workshop</h1>
+            </div>
+            <div class="side"></div>
+        </div>
+    </div>
+    <div class="container">
         <div class="side"></div>
         <div class="middle column">
-            <h1 class="headerLeft">Søk om Workshop</h1>
             <form action="/" method="post" id="formWorkshop">
                 <div class="formItem">
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" required>
                     <span class="bar"></span>
                     <label for="name">Navn på prosjektet </label>
                 </div>
@@ -56,19 +64,20 @@
                 </div>
 
                 <div class="formItem">
-                    <input type="tel" name="telephone" id="telephone" pattern="[0-9]{8}" required>
+                    <input type="text" name="telephone" id="telephone" required>
                     <span class="bar"></span>
                     <label for="telephone">Telefonnummer * </label>
                 </div>
 
                 <div class="formItem">
                     <input type="email" name="email" id="email" required>
+                    <!-- Skal vi ha farget understrek og "google effekt"? -->
                     <span class="bar"></span>
                     <label for="email">E-post * </label>
                 </div>
 
                 <div class="formItem">
-                    <input type="url" name="website" id="website">
+                    <input type="text" name="website" id="website">
                     <span class="bar"></span>
                     <label for="website">Nettside </label>
                 </div>
@@ -78,7 +87,7 @@
                 </div>
 
                 <div class="buttonSubmit">
-                    <button type="submit" name="submit" id="submit" class="buttonPink">Send inn</button>
+                    <button type="submit" name="button" class="buttonPink">Send inn</button>
                 </div>
             </form>
         </div>
@@ -87,18 +96,17 @@
 
     <footer>
         <div id="footerTop">
-            <img src="img/logoSmall.png" id="logoBlack" alt="designhjelpen logo">
+            <a href="home.html"> <img src="img/logoSmall.png" id="logoBlack" alt="designhjelpen logo"></a>
         </div>
         <div id="footerSocial">
             <a href="https://www.facebook.com/Designhjelpen/" target="_blank" id="facebook"><img src="img/facebookWhite.png" alt="facebook logo"></a>
             <a href="https://www.instagram.com/designhjelpen/" target="_blank" id="instagram"><img src="img/instaWhite.png" alt="instagram logo"></a>
-            <a href="" id="twitter"><img src="img/twitterWhite.png" alt="twitter logo"></a>
+            <a href="https://twitter.com/DesignHjelpen" target="_blank" id="twitter"><img src="img/twitterWhite.png" alt="twitter logo"></a>
         </div>
         <div>
             <p class="footerText">© 2017 Designhjelpen</p>
         </div>
     </footer>
-
     <script src="scripts/validateForms.js"></script>
 </body>
 
