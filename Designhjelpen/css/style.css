@@ -149,7 +149,6 @@ input:focus ~ .bar:after {
     width: 100%;
 }
 
-<<<<<<< HEAD
 /* invalid state – Ninni */
 
 input:valid ~ .bar:before,
@@ -173,6 +172,7 @@ input:required:invalid {
 /* --– Ninni --- */
 
 label {
+<<<<<<< HEAD
     font-size: calc(8px + 0.8vw);
     /* var 22px */
     font-weight: bold;
@@ -185,6 +185,19 @@ label {
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
+=======
+	font-size:calc(8px + 0.8vw); /* var 22px */
+	font-weight:bold;
+	left:5px;
+	letter-spacing: 0.8px;
+	position:absolute;
+	pointer-events:none;
+	top:-40px;
+	-o-transition:0.2s ease all;
+	transition:0.2s ease all;
+	-moz-transition:0.2s ease all;
+	-webkit-transition:0.2s ease all;
+>>>>>>> ninni
 }
 
 textarea {
