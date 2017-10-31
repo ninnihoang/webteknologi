@@ -382,8 +382,8 @@ nav {
 }
 
 .imageCenter { /* 16/9 ratio */
-	max-width: 60vw;
-	height: 34vh; /* var 42vh */
+	position: relative;
+	margin: auto;
 }
 .imageMedium {
 	max-height: auto; /* var 500px */
