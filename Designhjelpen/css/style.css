@@ -391,7 +391,7 @@ nav {
 }
 
 .imageNav {
-
+	max-width: 20vw;
 }
 
 .imageSmall {
@@ -554,9 +554,9 @@ nav {
 .textWhite { color: #FFF; }
 
 .two {
-	-webkit-box-flex: 4;
-	    -ms-flex-positive: 4;
-	        flex-grow: 4;
+	-webkit-box-flex: 2;
+	    -ms-flex-positive: 2;
+	        flex-grow: 2;
 	text-align: center;
 }
 
@@ -607,7 +607,7 @@ nav {
 
 #imageHeader>img {
 	 max-width: 100%;
-	 height: 100%;
+	 height: 100vh;
 	 object-fit: cover;
 }
 
@@ -621,7 +621,7 @@ nav {
 	white-space: nowrap;
 }
 
-#instagram img{
+#instagram img {
 	position: relative;
 	height: 60px;
 	width: 60px;
