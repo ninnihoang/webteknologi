@@ -121,7 +121,6 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 	width:100%;
 }
 
-<<<<<<< HEAD
 /* invalid state – Ninni */
 input:valid ~ .bar:before, input:valid ~ .bar:after {
     background: green;
@@ -141,12 +140,8 @@ input:required:invalid {
 
 /* --– Ninni --- */
 
-label { 
-	font-size:22px;
-=======
 label {
 	font-size:calc(8px + 0.8vw); /* var 22px */
->>>>>>> a737882337a075a6c5f763a1fc7cb680483448a3
 	font-weight:bold;
 	left:5px;
 	letter-spacing: 0.8px;
@@ -403,7 +398,7 @@ nav {
 .imageSmall {
 	max-height: 250px; /* var 250px */
 	max-width: 12vw;	/* var 250px */
-	padding-right: 15%; 
+	padding-right: 15%;
 }
 
 .lead {
