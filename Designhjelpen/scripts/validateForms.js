@@ -2,7 +2,7 @@ var contact = document.getElementById("contact");
 var telephone = document.getElementById("telephone");
 var email = document.getElementById("email");
 var website = document.getElementById("website");
-
+var submit = document.getElementsByClassName("buttonPink");
 
 function formValidation() {
     if (contact.checkValidity() === false) {
@@ -22,5 +22,8 @@ function formValidation() {
     }
 }
 
+console.log(submit);
 
-document.getElementById('submit').addEventListener('click', formValidation)
+for (var i = 0; i < submit.length; i++) {
+    submit[i].addEventListener('click', formValidation);
+}
