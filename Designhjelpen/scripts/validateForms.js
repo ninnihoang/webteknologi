@@ -22,10 +22,6 @@ function formValidation() {
     }
 }
 
-console.log(submit);
-console.log(contact !== null);
-console.log(contact.checkValidity() === false);
-
 for (var i = 0; i < submit.length; i++) {
     submit[i].addEventListener('click', formValidation);
 }
