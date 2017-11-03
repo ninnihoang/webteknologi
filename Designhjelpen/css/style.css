@@ -59,7 +59,7 @@ h1, h2, h3, p, label, input, td, textarea, #skill {
 p {
 	font-size:calc(8px + .8vw); /* var 26px */
 	line-height: 1.5;
-	max-width: 75%;
+	max-width: 70%;
 	text-align: left;
 }
 
@@ -94,8 +94,26 @@ tr {
 }
 
 /*                                                                  LISTS                                           */
+
 li {
-	padding: 2% 1em;
+	padding-bottom: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+li.one:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .3s ease, background-color .5s ease;
+}
+
+li.one:hover:after {
+	width: 60%;
+	background: #DAE25C;
 }
 
 ul {
@@ -137,8 +155,6 @@ input:invalid ~ .bar:before, input:invalid ~ .bar:after {
 input:required:invalid {
     border-bottom: 3px solid #EEEEEE;
 }
-
-/* --– Ninni --- */
 
 label {
 	font-size:calc(8px + 0.8vw); /* var 22px */
@@ -273,7 +289,7 @@ nav {
 }
 
 .boxGreen, .boxGrey, .boxWhite {
-	padding: 100px 0;
+	padding: 4% 0;
 }
 
 .buttonGreen {
@@ -295,7 +311,7 @@ nav {
 
 .buttonGreen, .buttonPink, .buttonGrey { /* general styling of buttons */
 	border: none;
-	border-radius: 10vw; /* var 50px */
+	border-radius: 50vw;
 	color:#FFF;
 	cursor: pointer;
 	font-family: verdana, sans-serif;
@@ -377,17 +393,16 @@ nav {
 }
 
 .imageBlog {
-	max-width: 60vw; /* var width: 100%; */
-	height: 34vh; /* var height: 100%; */
+	max-width: 40vw; /* var width: 100%; */
 }
 
-.imageCenter { /* 16/9 ratio */
-	position: relative;
+.imageCenter {
+	max-width: 80%;
 	margin: auto;
 }
+
 .imageMedium {
-	max-height: auto; /* var 500px */
-	max-width: 40vw; /* var 500px */
+	max-width: 35vw; /* var 500px */
 }
 
 .imageNav {
@@ -401,12 +416,20 @@ nav {
     border-radius: 50%; /* rounded images */
 }
 
+.imageStep {
+	margin: auto;
+	max-width: 80vw;
+	border: 5px solid #3B3B3B;
+	border-radius: 5px;
+}
+
 .lead {
 	position: relative;
 	top: 100%;
 	text-align: justify;
 }
 
+/*
 .left {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -415,6 +438,7 @@ nav {
 	    -ms-flex-align: start;
 	        align-items: flex-start;
 }
+*/
 
 .middle {
 	display: -webkit-box;
@@ -430,8 +454,8 @@ nav {
 
 .navigation {
 	list-style: none;
-	margin: -5px;
-	padding: 0;
+	margin: -5px 0;
+	padding: 2% 0;
 	background-color: #3B3B3B;
 	color: #FFF;
 	display: -webkit-box;
@@ -550,7 +574,7 @@ nav {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 75%; /* var 60% */
+	max-width: 70%;
 }
 
 .textWhite { color: #FFF; }
@@ -566,6 +590,11 @@ nav {
 	position: relative;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+#changePhotos {
+	width: 350px;
+	height: auto;
 }
 
 #facebook img{
@@ -596,7 +625,7 @@ nav {
 
 #formApplication, #formWorkshop {
 	margin: 10% auto 15% auto;
-	width: 50%;
+	width: 40vw; /* var 50% */
 }
 
 #imageHeader {
@@ -644,7 +673,7 @@ nav {
 
 #postIt {
 	background:#fefabc;
-	padding:0 0 20vh 0; /* var 0 0 300px 0,    kan endres til 0 0 15vh 0 */
+	padding:0 0 100% 0; 
 	font-family: 'Gloria Hallelujah', cursive;
 	font-size:calc(12px + 0.9vw); /* var 26px */
 	color: #000;
@@ -664,7 +693,7 @@ nav {
 	-webkit-transform: translate(-50%, 100%);
 	    -ms-transform: translate(-50%, 100%);
 	        transform: translate(-50%, 100%); /* kan endres til (-50%, 60%) */
-	padding: 10px 30px;	/* 0 1vw */
+	padding: 0 3vw;
 }
 
 #twitter img{
@@ -675,7 +704,39 @@ nav {
 	right: -25px;
 }
 
-#changePhotos {
-	width: 350px;
-	height: auto;
+/*                                                                  Image                                         */
+
+#kasper, #torgeir, #paul, #stian, #moina, #henrik, #mia, #edvard {
+
+} 
+#kasper:hover {
+	content: url('../img/contact/KasperHover.jpg');
+}
+
+#torgeir:hover {
+	content: url('../img/contact/TorgeirHover.jpg');
+}
+/*														mangler bilder
+#paul:hover {
+	content: url('../img/contact/');
+}
+
+#stian:hover {
+	content: url('../img/contact/');
+}
+*/
+#moina:hover {
+	content: url('../img/contact/MoinaHover.jpg');
+}
+
+#henrik:hover {
+	content: url('../img/contact/HenrikHover.jpg');
+}
+
+#mia:hover {
+	content: url('../img/contact/MiaHover.jpg');
+}
+
+#edvard:hover {
+	content: url('../img/contact/EdvardHover.jpg');
 }
