@@ -23,7 +23,7 @@ body, html {
 
 a {
 	color: #FFF;
-	font-size: calc(8px + .7vw); /* var 26px */
+	font-size: calc(8px + .7vw); 
 	text-decoration: none;
 }
 
@@ -38,11 +38,11 @@ a:link, a:visited, a:active {
 }
 
 h1 {
-	font-size: calc(20px + 4vw); /* var 100px, deretter 8vw */
+	font-size: calc(20px + 4vw); 
 }
 
 h2 {
-	font-size: 3.2vw; /* var 56px */
+	font-size: 3.2vw; 
 	margin-top: 0;
 }
 
@@ -57,7 +57,7 @@ h1, h2, h3, p, label, input, td, textarea, #skill {
 }
 
 p {
-	font-size:calc(8px + .8vw); /* var 26px */
+	font-size:calc(8px + .8vw); 
 	line-height: 1.5;
 	max-width: 70%;
 	text-align: left;
@@ -139,7 +139,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 	width:100%;
 }
 
-/* invalid state – Ninni */
+/* invalid state */
 input:valid ~ .bar:before, input:valid ~ .bar:after {
     background: green;
 }
@@ -157,7 +157,7 @@ input:required:invalid {
 }
 
 label {
-	font-size:calc(8px + 0.8vw); /* var 22px */
+	font-size:calc(8px + 0.8vw);
 	font-weight:bold;
 	left:5px;
 	letter-spacing: 0.8px;
@@ -255,7 +255,7 @@ nav {
 .bigNumber {
 	color: #DAE25C;
 	font-family: 'Oswald' , sans-serif;
-	font-size: 13vw; /* var 200px */
+	font-size: 13vw; 
 	font-weight: bold;
 	margin: 0 10vw;
 	position: relative;
@@ -315,19 +315,19 @@ nav {
 	color:#FFF;
 	cursor: pointer;
 	font-family: verdana, sans-serif;
-	font-size: calc(12px + 0.8vw) ; /* var 26px */
+	font-size: calc(12px + 0.8vw) ; 
 	font-weight: bold;
 	letter-spacing: 1.5px;
 	min-width: 383.94px;
 	outline: none;
-	padding: 3vh calc(80px + 0.7vw ); /* var 25px 125px */
+	padding: 3vh calc(80px + 0.7vw ); 
 	text-align: center;
 	text-decoration:none;
 	text-transform: uppercase;
 }
 
 .buttonLink {
-	padding: 4vh 0 0 0; /* var 100px 0 0 0 */
+	padding: 4vh 0 0 0; 
 }
 
 .buttonLink, .buttonSubmit {
@@ -393,7 +393,7 @@ nav {
 }
 
 .imageBlog {
-	max-width: 40vw; /* var width: 100%; */
+	max-width: 40vw; 
 }
 
 .imageCenter {
@@ -402,7 +402,7 @@ nav {
 }
 
 .imageMedium {
-	max-width: 35vw; /* var 500px */
+	max-width: 35vw; 
 }
 
 .imageNav {
@@ -410,8 +410,8 @@ nav {
 }
 
 .imageSmall {
-	max-height: 250px; /* var 250px */
-	max-width: 12vw;	/* var 250px */
+	max-height: 250px; 
+	max-width: 12vw;	
     margin: 1.5vw 1.5vw 1.5vw 0vw;
     border-radius: 50%; /* rounded images */
 }
@@ -429,17 +429,6 @@ nav {
 	text-align: justify;
 }
 
-/*
-.left {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: start;
-	    -ms-flex-align: start;
-	        align-items: flex-start;
-}
-*/
-
 .middle {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -450,6 +439,9 @@ nav {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+	position: relative;
+	margin: auto;
+	max-width: 70vw;
 }
 
 .navigation {
@@ -494,20 +486,6 @@ nav {
 	        justify-content: center;
 }
 
-.reverse {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: reverse;
-	    -ms-flex-direction: row-reverse;
-	        flex-direction: row-reverse;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	text-align: right;
-}
-
 .right {
 	-webkit-box-align: end;
 	    -ms-flex-align: end;
@@ -520,12 +498,6 @@ nav {
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	text-align: right;
-}
-
-.section {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
 }
 
 .side {
@@ -555,6 +527,9 @@ nav {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+	position: relative;
+	margin: auto;
+	max-width: 70vw;
 }
 
 .textBlog {
@@ -591,7 +566,7 @@ nav {
 	margin-right: auto;
 	margin-left: auto;
 }
-
+/*                                                                          ID's                                            */
 #changePhotos {
 	width: 350px;
 	height: auto;
@@ -625,7 +600,7 @@ nav {
 
 #formApplication, #formWorkshop {
 	margin: 10% auto 15% auto;
-	width: 40vw; /* var 50% */
+	width: 40vw;
 }
 
 #imageHeader {
@@ -675,9 +650,9 @@ nav {
 	background:#fefabc;
 	padding:0 0 100% 0; 
 	font-family: 'Gloria Hallelujah', cursive;
-	font-size:calc(12px + 0.9vw); /* var 26px */
+	font-size:calc(12px + 0.9vw);
 	color: #000;
-	width:calc(100px + 15vw); /* var 400px */
+	width:calc(100px + 15vw);
 	-webkit-transform: rotate(7deg);
 	    -ms-transform: rotate(7deg);
 	        transform: rotate(7deg);
@@ -692,7 +667,7 @@ nav {
 	left: 50%;
 	-webkit-transform: translate(-50%, 100%);
 	    -ms-transform: translate(-50%, 100%);
-	        transform: translate(-50%, 100%); /* kan endres til (-50%, 60%) */
+	        transform: translate(-50%, 100%);
 	padding: 0 3vw;
 }
 
@@ -704,7 +679,7 @@ nav {
 	right: -25px;
 }
 
-/*                                                                  Image                                         */
+/*                                                                  Images                                         */
 
 #kasper, #torgeir, #paul, #stian, #moina, #henrik, #mia, #edvard {
 
