@@ -23,7 +23,7 @@ body, html {
 
 a {
 	color: #FFF;
-	font-size: calc(8px + .7vw); 
+	font-size: calc(8px + .7vw);
 	text-decoration: none;
 }
 
@@ -38,11 +38,11 @@ a:link, a:visited, a:active {
 }
 
 h1 {
-	font-size: calc(20px + 4vw); 
+	font-size: calc(20px + 4vw);
 }
 
 h2 {
-	font-size: 3.2vw; 
+	font-size: 3.2vw;
 	margin-top: 0;
 }
 
@@ -57,7 +57,7 @@ h1, h2, h3, p, label, input, td, textarea, #skill {
 }
 
 p {
-	font-size:calc(8px + .8vw); 
+	font-size:calc(8px + .8vw);
 	line-height: 1.5;
 	max-width: 70%;
 	text-align: left;
@@ -83,6 +83,9 @@ p, a, input, label, li, textarea{
 	font-family: verdana, sans-serif;
 }
 /*                                                                  TABLES                                          */
+table {
+	padding-bottom: 15vh;
+}
 td {
 	font-family: verdana, sans-serif;
 	position: relative;
@@ -121,6 +124,7 @@ ul {
 }
 
 /*                                                                  FORMS                                           */
+
 input {
 	border:none;
 	border-bottom:3px solid #EEEEEE;
@@ -183,6 +187,7 @@ textarea {
 }
 
 /*                                                                  SECTIONS                                        */
+
 footer{
 	-ms-flex-line-pack: center;
 	    align-content: center;
@@ -213,6 +218,7 @@ nav {
 	z-index: 99;
 }
 /*                                                                 CLASSES                                         */
+
 .alignCenter {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -255,7 +261,7 @@ nav {
 .bigNumber {
 	color: #DAE25C;
 	font-family: 'Oswald' , sans-serif;
-	font-size: 13vw; 
+	font-size: 13vw;
 	font-weight: bold;
 	margin: 0 10vw;
 	position: relative;
@@ -315,19 +321,19 @@ nav {
 	color:#FFF;
 	cursor: pointer;
 	font-family: verdana, sans-serif;
-	font-size: calc(12px + 0.8vw) ; 
+	font-size: calc(12px + 0.8vw) ;
 	font-weight: bold;
 	letter-spacing: 1.5px;
 	min-width: 383.94px;
 	outline: none;
-	padding: 3vh calc(80px + 0.7vw ); 
+	padding: 3vh calc(80px + 0.7vw );
 	text-align: center;
 	text-decoration:none;
 	text-transform: uppercase;
 }
 
 .buttonLink {
-	padding: 4vh 0 0 0; 
+	padding: 4vh 0 0 0;
 }
 
 .buttonLink, .buttonSubmit {
@@ -393,7 +399,7 @@ nav {
 }
 
 .imageBlog {
-	max-width: 40vw; 
+	max-width: 40vw;
 }
 
 .imageCenter {
@@ -402,7 +408,7 @@ nav {
 }
 
 .imageMedium {
-	max-width: 35vw; 
+	max-width: 35vw;
 }
 
 .imageNav {
@@ -410,8 +416,8 @@ nav {
 }
 
 .imageSmall {
-	max-height: 250px; 
-	max-width: 12vw;	
+	max-height: 250px;
+	max-width: 12vw;
     margin: 1.5vw 1.5vw 1.5vw 0vw;
     border-radius: 50%; /* rounded images */
 }
@@ -421,12 +427,6 @@ nav {
 	max-width: 80vw;
 	border: 5px solid #3B3B3B;
 	border-radius: 5px;
-}
-
-.lead {
-	position: relative;
-	top: 100%;
-	text-align: justify;
 }
 
 .middle {
@@ -648,7 +648,7 @@ nav {
 
 #postIt {
 	background:#fefabc;
-	padding:0 0 100% 0; 
+	padding:0 0 100% 0;
 	font-family: 'Gloria Hallelujah', cursive;
 	font-size:calc(12px + 0.9vw);
 	color: #000;
@@ -683,7 +683,7 @@ nav {
 
 #kasper, #torgeir, #paul, #stian, #moina, #henrik, #mia, #edvard {
 
-} 
+}
 #kasper:hover {
 	content: url('../img/contact/KasperHover.jpg');
 }
