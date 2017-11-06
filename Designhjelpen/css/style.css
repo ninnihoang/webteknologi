@@ -113,14 +113,14 @@ li.navLink:after {
 	content: '';
 	display: block;
 	margin: auto;
-	height: 3px;
+	height: 2px;
 	width: 0px;
 	background: transparent;
 	transition: width .3s ease, background-color .5s ease;
 }
 
 li.navLink:hover:after {
-	width: 55%;
+	width: 10%;
 	background: #DAE25C;
 }
 
