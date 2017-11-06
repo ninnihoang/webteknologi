@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
+<<<<<<< HEAD
 * { 
 	box-sizing:border-box; 
 }
@@ -8,6 +9,22 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+=======
+* {
+	-webkit-box-sizing:border-box;
+	        box-sizing:border-box;
+}
+
+body {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	min-height: 100vh;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+>>>>>>> master
 }
 
 body, html {
@@ -17,7 +34,11 @@ body, html {
 
 a {
 	color: #FFF;
+<<<<<<< HEAD
 	font-size: 20px;
+=======
+	font-size: calc(8px + .7vw);
+>>>>>>> master
 	text-decoration: none;
 }
 
@@ -32,11 +53,19 @@ a:link, a:visited, a:active {
 }
 
 h1 {
+<<<<<<< HEAD
 	font-size: 100px;
 }
 
 h2 {
 	font-size: 56px;
+=======
+	font-size: calc(20px + 4vw);
+}
+
+h2 {
+	font-size: 3.2vw;
+>>>>>>> master
 	margin-top: 0;
 }
 
@@ -51,12 +80,22 @@ h1, h2, h3, p, label, input, td, textarea, #skill {
 }
 
 p {
+<<<<<<< HEAD
 	font-size: 26px;
 	line-height: 1.5;
 	max-width: 60%;
 	text-align: left;
 }
 
+=======
+	font-size:calc(8px + .8vw);
+	line-height: 1.5;
+	max-width: 70%;
+	text-align: left;
+}
+
+/* Styling til footer-teksten */
+>>>>>>> master
 p.footerText {
 	position: relative;
 	top: -30px;
@@ -66,13 +105,19 @@ p.footerText {
 	text-align: center;
 }
 
+<<<<<<< HEAD
 p.textCenter {
+=======
+/* Midtstilling av tekst under workshop-skjemaet */
+p.textWorkshop {
+>>>>>>> master
 	max-width: 100%;
 	padding: 0;
 	padding-bottom: 15%;
 	text-align: justify;
 }
 
+<<<<<<< HEAD
 p, a, input, label, textarea{
 	font-family: verdana, sans-serif;
 }
@@ -89,11 +134,63 @@ li {
 }
 
 /*                                                                  FORMS                                           */
+=======
+p, a, input, label, li, textarea{
+	font-family: verdana, sans-serif;
+}
+/*                                                                  TABLES                                          */
+
+table {
+	padding-bottom: 15vh;
+}
+
+td {
+	font-family: verdana, sans-serif;
+	position: relative;
+}
+
+tr {
+	border-collapse: separate;
+	border-spacing: 10px 15px;
+}
+
+/*                                                                  LISTS                                           */
+
+li {
+	padding-bottom: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+/* Styling av "grønn linje" under navbar-linkene på hover */
+li.one:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .3s ease, background-color .5s ease;
+}
+
+li.one:hover:after {
+	width: 60%;
+	background: #DAE25C;
+}
+
+ul {
+	list-style: none;
+}
+
+/*                                                                  FORMS                                           */
+
+>>>>>>> master
 input {
 	border:none;
 	border-bottom:3px solid #EEEEEE;
 	display:block;
 	font-size:22px;
+<<<<<<< HEAD
 	padding:10px 10px 10px 5px;	
 	width:100%;
 }
@@ -110,28 +207,74 @@ input:focus ~ label, /*input:valid ~ label*/ { /* choosing whether to make the t
 }
 
 /* active state */
+=======
+	padding:10px 10px 10px 5px;
+	width:100%;
+}
+
+input:focus {
+	outline:none;
+}
+
+
+>>>>>>> master
 input:focus ~ .bar:before, input:focus ~ .bar:after {
 	width:100%;
 }
 
+<<<<<<< HEAD
 label { 
 	font-size:22px;
+=======
+/* invalid state */
+input:valid ~ .bar:before, input:valid ~ .bar:after {
+    background: green;
+}
+
+input:invalid {
+    border-bottom: 3px solid red;
+}
+
+input:invalid ~ .bar:before, input:invalid ~ .bar:after {
+    background: red;
+}
+
+input:required:invalid {
+    border-bottom: 3px solid #EEEEEE;
+}
+
+label {
+	font-size:calc(8px + 0.8vw);
+>>>>>>> master
 	font-weight:bold;
 	left:5px;
 	letter-spacing: 0.8px;
 	position:absolute;
+<<<<<<< HEAD
 	pointer-events:none;	
 	top:-40px;
 	transition:0.2s ease all; 
 	-moz-transition:0.2s ease all; 
 	-webkit-transition:0.2s ease all;	
+=======
+	pointer-events:none;
+	top:-40px;
+	-o-transition:0.2s ease all;
+	transition:0.2s ease all;
+	-moz-transition:0.2s ease all;
+	-webkit-transition:0.2s ease all;
+>>>>>>> master
 }
 
 textarea {
 	border: 2px solid;
 	border-color: #EEEEEE;
 	border-radius: 5px;
+<<<<<<< HEAD
 	display: inline block; 
+=======
+	display: inline block;
+>>>>>>> master
 	font-size: 20px;
 	margin-top: 25px;
 	padding-bottom: 45px;
@@ -140,18 +283,35 @@ textarea {
 }
 
 /*                                                                  SECTIONS                                        */
+<<<<<<< HEAD
 footer{
 	align-content: center;
 	flex-direction: column;
+=======
+
+footer{
+	-ms-flex-line-pack: center;
+	    align-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+>>>>>>> master
 	background-color: #3B3B3B;
 	border: none;
 	bottom: 0;
 	bottom: 0px;
+<<<<<<< HEAD
+=======
+	display: -webkit-box;
+	display: -ms-flexbox;
+>>>>>>> master
 	display: flex;
 	height: 300px;
 	width: 100%;
 }
 
+<<<<<<< HEAD
 
 nav {
 	align-content: center;
@@ -175,6 +335,45 @@ nav {
 	width: 100%;
 }
 
+=======
+/* Styling av selve nav-bar elementet */
+nav {
+	-ms-flex-line-pack: center;
+	    align-content: center;
+	position: -webkit-sticky;
+	position: sticky;
+	border: none;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+}
+/*                                                                 CLASSES                                         */
+
+.alignCenter {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+/* Styling av linje under input på workshop og bli-med skjemaene */
+.bar {
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+/* Fargeskift av input-linjer ved aktiv-state på workshop og bli-med skjemaene */
+>>>>>>> master
 .bar:after {
 	background:#5264AE;
 	bottom:0;
@@ -182,6 +381,7 @@ nav {
 	height:3px;
 	left:0%;
 	position:absolute;
+<<<<<<< HEAD
 	transition:0.2s ease all; 
 	transition-property: left;
 	width:0; 
@@ -197,10 +397,34 @@ nav {
 	margin: 0 100px;
 	position: relative;
 	justify-content: flex-end;
+=======
+	-o-transition:0.2s ease all;
+	transition:0.2s ease all;
+	-webkit-transition-property: left;
+	-o-transition-property: left;
+	transition-property: left;
+	width:0;
+	-moz-transition:0.2s ease all;
+	-webkit-transition:0.2s ease all;
+}
+
+/* Styling av tall på what.html-siden */
+.bigNumber {
+	color: #DAE25C;
+	font-family: 'Oswald' , sans-serif;
+	font-size: 13vw;
+	font-weight: bold;
+	margin: 0 10vw;
+	position: relative;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+>>>>>>> master
 }
 
 .bold { font-weight: bold; }
 
+<<<<<<< HEAD
 .boxGrey {
 	background: #EEE; 
 	display: flex;
@@ -213,15 +437,48 @@ nav {
 
 .boxWhite { 
 	background: #FFF; 
+=======
+/* Setter bakgrunnen til grå på gitt område */
+.boxGrey {
+	background: #EEE;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+/* Setter bakgrunnen til grønn på gitt område */
+.boxGreen {
+	background: #DAE25C;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+/* Setter bakgrunnen til hvit på gitt område */
+.boxWhite {
+	background: #FFF;
+	display: -webkit-box;
+	display: -ms-flexbox;
+>>>>>>> master
 	display: flex;
 	width: 100%;
 }
 
+<<<<<<< HEAD
 .boxGreen, .boxGrey, .boxWhite {
 	padding: 100px 0;
 }
 
 .buttonGreen { 
+=======
+/* Generell padding på alle boks-elementene */
+.boxGreen, .boxGrey, .boxWhite {
+	padding: 5% 0;
+}
+
+/* Setter farge på knapper og endrer dem ved :hover */
+.buttonGreen {
+>>>>>>> master
 	background-color: #DAE25C;
 }
 
@@ -238,6 +495,7 @@ nav {
 
 .buttonPink:hover { background-color: #3B3B3B; }
 
+<<<<<<< HEAD
 .buttonGreen, .buttonPink, .buttonGrey { /* general styling of buttons */
 	/* position: relative; */
 	border: none;
@@ -246,10 +504,21 @@ nav {
 	cursor: pointer;
 	font-family: verdana, sans-serif;
 	font-size: 26px;
+=======
+/* Generell styling av knappene */
+.buttonGreen, .buttonPink, .buttonGrey {
+	border: none;
+	border-radius: 50vw;
+	color:#FFF;
+	cursor: pointer;
+	font-family: verdana, sans-serif;
+	font-size: calc(12px + 0.8vw) ;
+>>>>>>> master
 	font-weight: bold;
 	letter-spacing: 1.5px;
 	min-width: 383.94px;
 	outline: none;
+<<<<<<< HEAD
 	padding: 25px 125px;
 	text-align: center;
 	text-decoration:none;
@@ -289,10 +558,71 @@ nav {
 }
 
 .formItem {  
+=======
+	padding: 3vh calc(80px + 0.7vw );
+	text-align: center;
+	text-decoration:none;
+	text-transform: uppercase;
+}
+
+/* Sentrering av knapper for workshop og bli-med skjemaene */
+.buttonSubmit {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.center {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+/* Arrangerer alle elementer i classen som kolonne */
+.column {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+/* Generell wrapper for nettsidene, setter flex-box for alle child-elementer */
+.container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+}
+
+/* Setter margin og posisjon for alle div-elementer i workshop og bli-med skjemaene */
+.formItem {
+>>>>>>> master
 	margin: 0 auto 120px auto;
 	position:relative;
 }
 
+<<<<<<< HEAD
 .imageBlog {
 	width: 100%;
 	height: 100%;
@@ -372,6 +702,125 @@ nav {
 	min-width: 15%;
 }
 
+=======
+/* Angir størrelsen på alle blog-relaterte bilder */
+.imageBlog {
+	max-width: 40vw;
+}
+
+/* Angir størrelsen og sentrerer hovedbildene til hver blogpost */
+.imageCenter {
+	max-width: 80%;
+	margin: auto;
+}
+
+/* Angir størrelsen på alle medium-størrelse bilder, eksempelvis innholdsbildene på home.html */
+.imageMedium {
+	max-width: 35vw;
+}
+
+/* Angir størrelsen på designhjelpen-logoen i navbaren */
+.imageNav {
+	max-width: 20vw;
+}
+
+/* Angir størrelse og styling til bildene av styremedlemmene på contact.html-siden */
+.imageSmall {
+	max-height: 250px;
+	max-width: 12vw;
+    margin: 1.5vw 1.5vw 1.5vw 0vw;
+    border-radius: 50%; /* rounded images */
+}
+/* Angir størrelse og gir bildene på what.html en solid border */
+.imageStep {
+	margin: auto;
+	max-width: 80vw;
+	border: 5px solid #3B3B3B;
+	border-radius: 5px;
+}
+
+/* Setter styling og størrelse på det midtre elementet inne i en box, eksempelvis boxGrey */
+.middle {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 4;
+	    -ms-flex-positive: 4;
+	        flex-grow: 4;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	position: relative;
+	margin: auto;
+	max-width: 70vw;
+}
+
+/* Setter stylingen på elementene på navbaren */
+.navigation {
+	list-style: none;
+	margin: -5px 0;
+	padding: 2% 0;
+	background-color: #3B3B3B;
+	color: #FFF;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	top: 0;
+}
+
+/* Styling av link-elementene på navbaren, eksempelvis "hva vi gjør" */
+.navLink {
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	text-align: center;
+}
+
+/* Styling av designhjelpen-logo-linken på navbaren */
+.navLogo {
+	-webkit-box-flex: 2;
+	    -ms-flex-positive: 2;
+	        flex-grow: 2;
+	text-align: center;
+}
+
+/* Setter paddingen på gitte box-elementer til 0 for å komprimere avstand */
+.noPadding {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/* Setter styling for elementene på høyre side i middle-classen */
+.right {
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	text-align: right;
+}
+
+/* Brukes til å sette avstand fra kanten av nettsiden til innholdet i middle-classen */
+.side {
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	min-width: 15%;
+}
+
+/* Brukes til å skape vertikal avstand mellom to elementer */
+>>>>>>> master
 .spacer {
 	height: 100px;
 	width: 100%;
@@ -382,6 +831,7 @@ nav {
 	background-color: #EEE;
 }
 
+<<<<<<< HEAD
 .steps {
 	display: flex;
 	align-items: center;
@@ -390,26 +840,82 @@ nav {
 
 .textGreen { color: #DAE25C; }
 
+=======
+/* Styling av tekst blokken under bildene på what.html-siden */
+.steps {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	position: relative;
+	margin: auto;
+	max-width: 70vw;
+}
+
+/* Styling av teksten til blogpost-sidene */
+.textBlog {
+	max-width: 60%;
+}
+
+/* Styling av teksten til table-elementene */
+.textTable {
+	max-width: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+    margin-right: 3vw;
+}
+
+/* Setter deler av teksten på forside-bildet til grønn */
+.textGreen { color: #DAE25C; }
+
+/* Styling av h2 elementer under bilder på what.html siden */
+>>>>>>> master
 .textSteps {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
+<<<<<<< HEAD
 	max-width: 60%;
+=======
+	max-width: 70%;
+>>>>>>> master
 }
 
 .textWhite { color: #FFF; }
 
+<<<<<<< HEAD
 .two {
 	flex-grow: 4;
 	text-align: center;
 }
 
+=======
+/* Styling av paragraf-teksten under h2 elementene på what.html-siden */
+>>>>>>> master
 .under {
 	position: relative;
 	margin-right: auto;
 	margin-left: auto;
 }
+<<<<<<< HEAD
 
+=======
+/*                                                            ID's                                            */
+
+/* Setter størrelse og styling av institutt-bildet
+(satt av javascript-filen ChangePhotos.js) på who.html-siden */
+#changePhotos {
+	max-width: 30vw;
+	height: auto;
+}
+
+/* Styling av facebook-ikonet i footeren */
+>>>>>>> master
 #facebook img{
 	position: relative;
 	height: 60px;
@@ -418,6 +924,7 @@ nav {
 	left: -25px;
 }
 
+<<<<<<< HEAD
 #footerSocial {
 	display: flex;
 	justify-content: center;
@@ -433,36 +940,99 @@ nav {
 	width: 40%;	
 }
 
+=======
+/* Styling av conteineren til de sosiale elementene i footeren */
+#footerSocial {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+/* Styling av øverste del av footereren */
+#footerTop {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+/* Styling av workshop og bli-med skjemaene */
+#formApplication, #formWorkshop {
+	margin: 10% auto 15% auto;
+	width: 40vw;
+	padding-bottom: 10vh;
+}
+
+/* Styling av div-elementet som inneholder hovedbildet på home.html */
+>>>>>>> master
 #imageHeader {
 	bottom: 0;
 	position: relative;
 	text-align: center;
 	margin: 0;
+<<<<<<< HEAD
 	padding: 0;	
 }
 
 #imageHeader>img { max-width: 100%; }
 
+=======
+	padding: 0;
+}
+
+/* Styling av selve hovedbildet på home.html */
+#imageHeader>img {
+	 max-width: 100%;
+	 height: 100vh;
+	 object-fit: cover;
+}
+
+/* Styling av teksten på hovedbildet på home.html */
+>>>>>>> master
 #imageText {
 	left: 50%;
 	position: absolute;
 	top: 50%;
+<<<<<<< HEAD
 	transform: translate(-50%, -50%); 
 	white-space: nowrap;
 }
 
 #instagram img{
+=======
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	white-space: nowrap;
+}
+
+/* Styling av instagram-ikonet i footeren */
+#instagram img {
+>>>>>>> master
 	position: relative;
 	height: 60px;
 	width: 60px;
 	top: -50px;
 }
 
+<<<<<<< HEAD
+=======
+/* Styling av link nær bunnen av what.html-siden */
+>>>>>>> master
 #linkBlue {
 	color: #5264AE;
 	font-weight: bold;
 }
 
+<<<<<<< HEAD
+=======
+/* Styling av Designhjelpen-logoen i footeren */
+>>>>>>> master
 #logoBlack {
 	height: 150px;
 	width: 150px;
@@ -470,6 +1040,7 @@ nav {
 	top: -75px;
 }
 
+<<<<<<< HEAD
 #postIt {
 	background:#fefabc; 
 	padding:0 0 300px 0; 
@@ -482,14 +1053,43 @@ nav {
 	text-align: center;
 }
 
+=======
+/* Styling av postIt-lappen på home.html-siden */
+#postIt {
+	background:#fefabc;
+	padding:0 0 100% 0;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size:calc(12px + 0.9vw);
+	color: #000;
+	width:calc(100px + 15vw);
+	-webkit-transform: rotate(7deg);
+	    -ms-transform: rotate(7deg);
+	        transform: rotate(7deg);
+	-webkit-box-shadow: 0px 4px 6px #3b3b3b;
+	        box-shadow: 0px 4px 6px #3b3b3b;
+	text-align: center;
+}
+
+/* Styling av teksten relatert til postIt-lappen og quoteSkills.js javascript-elementet */
+>>>>>>> master
 #skill {
 	position: relative;
 	float: left;
 	left: 50%;
+<<<<<<< HEAD
 	transform: translate(-50%, 100%);
 	padding: 10px 30px;
 }
 
+=======
+	-webkit-transform: translate(-50%, 100%);
+	    -ms-transform: translate(-50%, 100%);
+	        transform: translate(-50%, 100%);
+	padding: 0 3vw;
+}
+
+/* Styling av twitter-ikonet i footeren */
+>>>>>>> master
 #twitter img{
 	position: relative;
 	height: 60px;
@@ -497,3 +1097,44 @@ nav {
 	top: -80px;
 	right: -25px;
 }
+<<<<<<< HEAD
+=======
+
+/*                                                          Images                                         */
+
+/* Setter forskjellige bilder ved hover på styremedlemmene i contact.html-siden */
+#kasper, #torgeir, #paul, #stian, #moina, #henrik, #mia, #edvard {
+
+}
+#kasper:hover {
+	content: url('../img/contact/KasperHover.jpg');
+}
+
+#torgeir:hover {
+	content: url('../img/contact/TorgeirHover.jpg');
+}
+/*														mangler bilder
+#paul:hover {
+	content: url('../img/contact/');
+}
+
+#stian:hover {
+	content: url('../img/contact/');
+}
+*/
+#moina:hover {
+	content: url('../img/contact/MoinaHover.jpg');
+}
+
+#henrik:hover {
+	content: url('../img/contact/HenrikHover.jpg');
+}
+
+#mia:hover {
+	content: url('../img/contact/MiaHover.jpg');
+}
+
+#edvard:hover {
+	content: url('../img/contact/EdvardHover.jpg');
+}
+>>>>>>> master
