@@ -23,7 +23,7 @@ body, html {
 
 a {
 	color: #FFF;
-	font-size: calc(8px + .7vw); 
+	font-size: calc(8px + .7vw);
 	text-decoration: none;
 }
 
@@ -38,11 +38,11 @@ a:link, a:visited, a:active {
 }
 
 h1 {
-	font-size: calc(20px + 4vw); 
+	font-size: calc(20px + 4vw);
 }
 
 h2 {
-	font-size: 3.2vw; 
+	font-size: 3.2vw;
 	margin-top: 0;
 }
 
@@ -57,12 +57,13 @@ h1, h2, h3, p, label, input, td, textarea, #skill {
 }
 
 p {
-	font-size:calc(8px + .8vw); 
+	font-size:calc(8px + .8vw);
 	line-height: 1.5;
 	max-width: 70%;
 	text-align: left;
 }
 
+/* Styling til footer-teksten */
 p.footerText {
 	position: relative;
 	top: -30px;
@@ -72,7 +73,8 @@ p.footerText {
 	text-align: center;
 }
 
-p.textCenter {
+/* Midtstilling av tekst under workshop-skjemaet */
+p.textWorkshop {
 	max-width: 100%;
 	padding: 0;
 	padding-bottom: 15%;
@@ -83,6 +85,11 @@ p, a, input, label, li, textarea{
 	font-family: verdana, sans-serif;
 }
 /*                                                                  TABLES                                          */
+
+table {
+	padding-bottom: 15vh;
+}
+
 td {
 	font-family: verdana, sans-serif;
 	position: relative;
@@ -101,6 +108,7 @@ li {
 	position: relative;
 }
 
+/* Styling av "grønn linje" under navbar-linkene på hover */
 li.one:after {
 	content: '';
 	display: block;
@@ -121,6 +129,7 @@ ul {
 }
 
 /*                                                                  FORMS                                           */
+
 input {
 	border:none;
 	border-bottom:3px solid #EEEEEE;
@@ -134,7 +143,7 @@ input:focus {
 	outline:none;
 }
 
-/* active state */
+
 input:focus ~ .bar:before, input:focus ~ .bar:after {
 	width:100%;
 }
@@ -183,6 +192,7 @@ textarea {
 }
 
 /*                                                                  SECTIONS                                        */
+
 footer{
 	-ms-flex-line-pack: center;
 	    align-content: center;
@@ -201,7 +211,7 @@ footer{
 	width: 100%;
 }
 
-
+/* Styling av selve nav-bar elementet */
 nav {
 	-ms-flex-line-pack: center;
 	    align-content: center;
@@ -213,6 +223,7 @@ nav {
 	z-index: 99;
 }
 /*                                                                 CLASSES                                         */
+
 .alignCenter {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -229,12 +240,14 @@ nav {
 	        flex-direction: column;
 }
 
+/* Styling av linje under input på workshop og bli-med skjemaene */
 .bar {
 	display: block;
 	position: relative;
 	width: 100%;
 }
 
+/* Fargeskift av input-linjer ved aktiv-state på workshop og bli-med skjemaene */
 .bar:after {
 	background:#5264AE;
 	bottom:0;
@@ -252,10 +265,11 @@ nav {
 	-webkit-transition:0.2s ease all;
 }
 
+/* Styling av tall på what.html-siden */
 .bigNumber {
 	color: #DAE25C;
 	font-family: 'Oswald' , sans-serif;
-	font-size: 13vw; 
+	font-size: 13vw;
 	font-weight: bold;
 	margin: 0 10vw;
 	position: relative;
@@ -266,6 +280,7 @@ nav {
 
 .bold { font-weight: bold; }
 
+/* Setter bakgrunnen til grå på gitt område */
 .boxGrey {
 	background: #EEE;
 	display: -webkit-box;
@@ -273,6 +288,7 @@ nav {
 	display: flex;
 }
 
+/* Setter bakgrunnen til grønn på gitt område */
 .boxGreen {
 	background: #DAE25C;
 	display: -webkit-box;
@@ -280,6 +296,7 @@ nav {
 	display: flex;
 }
 
+/* Setter bakgrunnen til hvit på gitt område */
 .boxWhite {
 	background: #FFF;
 	display: -webkit-box;
@@ -288,10 +305,12 @@ nav {
 	width: 100%;
 }
 
+/* Generell padding på alle boks-elementene */
 .boxGreen, .boxGrey, .boxWhite {
-	padding: 4% 0;
+	padding: 5% 0;
 }
 
+/* Setter farge på knapper og endrer dem ved :hover */
 .buttonGreen {
 	background-color: #DAE25C;
 }
@@ -309,28 +328,26 @@ nav {
 
 .buttonPink:hover { background-color: #3B3B3B; }
 
-.buttonGreen, .buttonPink, .buttonGrey { /* general styling of buttons */
+/* Generell styling av knappene */
+.buttonGreen, .buttonPink, .buttonGrey {
 	border: none;
 	border-radius: 50vw;
 	color:#FFF;
 	cursor: pointer;
 	font-family: verdana, sans-serif;
-	font-size: calc(12px + 0.8vw) ; 
+	font-size: calc(12px + 0.8vw) ;
 	font-weight: bold;
 	letter-spacing: 1.5px;
 	min-width: 383.94px;
 	outline: none;
-	padding: 3vh calc(80px + 0.7vw ); 
+	padding: 3vh calc(80px + 0.7vw );
 	text-align: center;
 	text-decoration:none;
 	text-transform: uppercase;
 }
 
-.buttonLink {
-	padding: 4vh 0 0 0; 
-}
-
-.buttonLink, .buttonSubmit {
+/* Sentrering av knapper for workshop og bli-med skjemaene */
+.buttonSubmit {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -348,6 +365,7 @@ nav {
 	        justify-content: center;
 }
 
+/* Arrangerer alle elementer i classen som kolonne */
 .column {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -361,6 +379,7 @@ nav {
 	        align-items: center;
 }
 
+/* Generell wrapper for nettsidene, setter flex-box for alle child-elementer */
 .container {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -377,45 +396,41 @@ nav {
 	        flex-grow: 1;
 }
 
-.content {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-}
-
+/* Setter margin og posisjon for alle div-elementer i workshop og bli-med skjemaene */
 .formItem {
 	margin: 0 auto 120px auto;
 	position:relative;
 }
 
+/* Angir størrelsen på alle blog-relaterte bilder */
 .imageBlog {
-	max-width: 40vw; 
+	max-width: 40vw;
 }
 
+/* Angir størrelsen og sentrerer hovedbildene til hver blogpost */
 .imageCenter {
 	max-width: 80%;
 	margin: auto;
 }
 
+/* Angir størrelsen på alle medium-størrelse bilder, eksempelvis innholdsbildene på home.html */
 .imageMedium {
-	max-width: 35vw; 
+	max-width: 35vw;
 }
 
+/* Angir størrelsen på designhjelpen-logoen i navbaren */
 .imageNav {
 	max-width: 20vw;
 }
 
+/* Angir størrelse og styling til bildene av styremedlemmene på contact.html-siden */
 .imageSmall {
-	max-height: 250px; 
-	max-width: 12vw;	
+	max-height: 250px;
+	max-width: 12vw;
     margin: 1.5vw 1.5vw 1.5vw 0vw;
     border-radius: 50%; /* rounded images */
 }
-
+/* Angir størrelse og gir bildene på what.html en solid border */
 .imageStep {
 	margin: auto;
 	max-width: 80vw;
@@ -423,12 +438,7 @@ nav {
 	border-radius: 5px;
 }
 
-.lead {
-	position: relative;
-	top: 100%;
-	text-align: justify;
-}
-
+/* Setter styling og størrelse på det midtre elementet inne i en box, eksempelvis boxGrey */
 .middle {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -444,6 +454,7 @@ nav {
 	max-width: 70vw;
 }
 
+/* Setter stylingen på elementene på navbaren */
 .navigation {
 	list-style: none;
 	margin: -5px 0;
@@ -462,30 +473,29 @@ nav {
 	top: 0;
 }
 
-.noPadding {
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
-.one {
+/* Styling av link-elementene på navbaren, eksempelvis "hva vi gjør" */
+.navLink {
 	-webkit-box-flex: 1;
 	    -ms-flex-positive: 1;
 	        flex-grow: 1;
 	text-align: center;
 }
 
-.picture {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+/* Styling av designhjelpen-logo-linken på navbaren */
+.navLogo {
+	-webkit-box-flex: 2;
+	    -ms-flex-positive: 2;
+	        flex-grow: 2;
+	text-align: center;
 }
 
+/* Setter paddingen på gitte box-elementer til 0 for å komprimere avstand */
+.noPadding {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/* Setter styling for elementene på høyre side i middle-classen */
 .right {
 	-webkit-box-align: end;
 	    -ms-flex-align: end;
@@ -500,6 +510,7 @@ nav {
 	text-align: right;
 }
 
+/* Brukes til å sette avstand fra kanten av nettsiden til innholdet i middle-classen */
 .side {
 	-webkit-box-flex: 1;
 	    -ms-flex-positive: 1;
@@ -507,6 +518,7 @@ nav {
 	min-width: 15%;
 }
 
+/* Brukes til å skape vertikal avstand mellom to elementer */
 .spacer {
 	height: 100px;
 	width: 100%;
@@ -517,6 +529,7 @@ nav {
 	background-color: #EEE;
 }
 
+/* Styling av tekst blokken under bildene på what.html-siden */
 .steps {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -532,10 +545,12 @@ nav {
 	max-width: 70vw;
 }
 
+/* Styling av teksten til blogpost-sidene */
 .textBlog {
 	max-width: 60%;
 }
 
+/* Styling av teksten til table-elementene */
 .textTable {
 	max-width: 100%;
 	margin-top: 0;
@@ -543,8 +558,10 @@ nav {
     margin-right: 3vw;
 }
 
+/* Setter deler av teksten på forside-bildet til grønn */
 .textGreen { color: #DAE25C; }
 
+/* Styling av h2 elementer under bilder på what.html siden */
 .textSteps {
 	position: relative;
 	margin-left: auto;
@@ -554,24 +571,22 @@ nav {
 
 .textWhite { color: #FFF; }
 
-.two {
-	-webkit-box-flex: 2;
-	    -ms-flex-positive: 2;
-	        flex-grow: 2;
-	text-align: center;
-}
-
+/* Styling av paragraf-teksten under h2 elementene på what.html-siden */
 .under {
 	position: relative;
 	margin-right: auto;
 	margin-left: auto;
 }
-/*                                                                          ID's                                            */
+/*                                                            ID's                                            */
+
+/* Setter størrelse og styling av institutt-bildet
+(satt av javascript-filen ChangePhotos.js) på who.html-siden */
 #changePhotos {
-	width: 350px;
+	max-width: 30vw;
 	height: auto;
 }
 
+/* Styling av facebook-ikonet i footeren */
 #facebook img{
 	position: relative;
 	height: 60px;
@@ -580,6 +595,7 @@ nav {
 	left: -25px;
 }
 
+/* Styling av conteineren til de sosiale elementene i footeren */
 #footerSocial {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -589,6 +605,7 @@ nav {
 	        justify-content: center;
 }
 
+/* Styling av øverste del av footereren */
 #footerTop {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -598,11 +615,14 @@ nav {
 	        justify-content: center;
 }
 
+/* Styling av workshop og bli-med skjemaene */
 #formApplication, #formWorkshop {
 	margin: 10% auto 15% auto;
 	width: 40vw;
+	padding-bottom: 10vh;
 }
 
+/* Styling av div-elementet som inneholder hovedbildet på home.html */
 #imageHeader {
 	bottom: 0;
 	position: relative;
@@ -611,12 +631,14 @@ nav {
 	padding: 0;
 }
 
+/* Styling av selve hovedbildet på home.html */
 #imageHeader>img {
 	 max-width: 100%;
 	 height: 100vh;
 	 object-fit: cover;
 }
 
+/* Styling av teksten på hovedbildet på home.html */
 #imageText {
 	left: 50%;
 	position: absolute;
@@ -627,6 +649,7 @@ nav {
 	white-space: nowrap;
 }
 
+/* Styling av instagram-ikonet i footeren */
 #instagram img {
 	position: relative;
 	height: 60px;
@@ -634,11 +657,13 @@ nav {
 	top: -50px;
 }
 
+/* Styling av link nær bunnen av what.html-siden */
 #linkBlue {
 	color: #5264AE;
 	font-weight: bold;
 }
 
+/* Styling av Designhjelpen-logoen i footeren */
 #logoBlack {
 	height: 150px;
 	width: 150px;
@@ -646,9 +671,10 @@ nav {
 	top: -75px;
 }
 
+/* Styling av postIt-lappen på home.html-siden */
 #postIt {
 	background:#fefabc;
-	padding:0 0 100% 0; 
+	padding:0 0 100% 0;
 	font-family: 'Gloria Hallelujah', cursive;
 	font-size:calc(12px + 0.9vw);
 	color: #000;
@@ -661,6 +687,7 @@ nav {
 	text-align: center;
 }
 
+/* Styling av teksten relatert til postIt-lappen og quoteSkills.js javascript-elementet */
 #skill {
 	position: relative;
 	float: left;
@@ -671,6 +698,7 @@ nav {
 	padding: 0 3vw;
 }
 
+/* Styling av twitter-ikonet i footeren */
 #twitter img{
 	position: relative;
 	height: 60px;
@@ -679,11 +707,12 @@ nav {
 	right: -25px;
 }
 
-/*                                                                  Images                                         */
+/*                                                          Images                                         */
 
+/* Setter forskjellige bilder ved hover på styremedlemmene i contact.html-siden */
 #kasper, #torgeir, #paul, #stian, #moina, #henrik, #mia, #edvard {
 
-} 
+}
 #kasper:hover {
 	content: url('../img/contact/KasperHover.jpg');
 }
