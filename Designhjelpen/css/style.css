@@ -109,12 +109,13 @@ li {
 }
 
 /* Styling the green line effect under navbar links on hover*/
-/*
+
 li.navLink:after {
 	content: '';
 	display: block;
 	margin: auto;
 	height: 2px;
+	top: 3px;
 	width: 0px;
 	background: transparent;
 	-webkit-transition: width .3s ease, background-color .5s ease;
@@ -126,7 +127,7 @@ li.navLink:hover:after {
 	width: 20%;
 	background: #DAE25C;
 }
-*/
+/*
 a.hoverEffect:after {
 	content: '';
 	display: block;
@@ -140,10 +141,10 @@ a.hoverEffect:after {
 }
 
 a.hoverEffect:hover:after {
-	width: inherit;
+	width: 80%;
 	background: #DAE25C;
-
 }
+*/
 
 ul {
 	list-style: none;
@@ -228,7 +229,6 @@ footer{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	height: 300px;
 	width: 100%;
 }
 
@@ -763,4 +763,7 @@ nav {
 
 #edvard:hover {
 	content: url('../img/contact/EdvardHover.jpg');
+}
+@media only screen and (min-width: 768px) {
+	
 }
