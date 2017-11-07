@@ -109,7 +109,7 @@ li {
 }
 
 /* Styling the green line effect under navbar links on hover*/
-
+/*
 li.navLink:after {
 	content: '';
 	display: block;
@@ -127,7 +127,8 @@ li.navLink:hover:after {
 	width: 20%;
 	background: #DAE25C;
 }
-/*
+*/
+
 a.hoverEffect:after {
 	content: '';
 	display: block;
@@ -141,10 +142,10 @@ a.hoverEffect:after {
 }
 
 a.hoverEffect:hover:after {
-	width: 80%;
+	width: 60%;
 	background: #DAE25C;
 }
-*/
+
 
 ul {
 	list-style: none;
@@ -764,6 +765,7 @@ nav {
 #edvard:hover {
 	content: url('../img/contact/EdvardHover.jpg');
 }
+
 @media only screen and (min-width: 768px) {
-	
+
 }
