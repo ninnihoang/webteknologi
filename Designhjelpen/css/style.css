@@ -463,6 +463,64 @@ nav {
 	max-width: 35vw;
 }
 
+/* Setting size of slide-image on home.html*/
+.sliderImg{
+	max-width: 35vw;
+}
+
+
+/* set position to relative on image-slider in home.html */
+.left{
+	position: relative;
+	height: 100%;
+}
+
+/* styling the position of the left arrow on image-slider in home.html*/
+#prev{
+	position:absolute;
+	padding: 0;
+	border:none;
+	background:none;
+	color:white;
+	left:0px;
+	bottom: 50%;
+	width:10%;
+	outline:none;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+
+/* styling the position of the right arrow on image-slider in home.html */
+#next{
+	position: absolute;
+	padding: 0;
+	border:none;
+	background: none;
+	color:white;
+	right:0px;
+	bottom:50%;
+	width:10%;
+	outline:none;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+
+/*styling the size of the left arrow on image-slider in home.html */
+#arrowLeft{
+	margin-right:5%;
+	transform:scale(3);
+	color: white;
+
+}
+
+/*styling the size of the right arrow on image-slider in home.html */
+#arrowRight{
+	margin-left:5%;
+	transform: scale(3);
+	color:white;
+}
+
+
 /* Setting size of the designhjelpen logo in navbar*/
 .imageNav {
 	max-width: 20vw;
