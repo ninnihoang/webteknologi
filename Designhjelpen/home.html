@@ -2,11 +2,16 @@
 <html lang="nb">
 
 <head>
-  <title>Designhjelpen | Hjem</title>
-  <link rel="shortcut icon" href="img/logoSmall.png" />
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Designhjelpen | Hjem</title>
+    <link rel="shortcut icon" href="img/logoSmall.png" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scripts/datedInfo.js"></script>
+    <script src="scripts/quoteSkills.js" async></script>
+    <script type="text/javascript" src ="scripts/slider.js"></script>
+
 </head>
 
 <body onload="showHide();">
@@ -51,26 +56,30 @@
       </div>
       <div class="side"></div>
     </div>
-    <!-- ********************************************************************************************************************************* -->
-    <div class="boxGrey" id="viTilbyr">
-      <div class="middle">
-        <div class="left">
-          <a href="workshop.html">
-            <h2>
-              Vi tilbyr designworkshops
-            </h2>
-            <p>
-              Du får en gratis innledende rådgivnings- eller idémyldringsworkshop. Det betyr at vi setter av noen timer til å idémyldre over eller diskutere problemstillingen din.
-            </p>
-          </a>
+
+        <!-- ********************************************************************************************************************************* -->
+        <div class="boxGrey" id="viTilbyr">
+            <div class="middle">
+                <div class="left">
+                    <a href="workshop.html">
+                        <h2>
+                            Vi tilbyr designworkshops
+                        </h2>
+                        <p>
+                            Du får en gratis innledende rådgivnings- eller idémyldringsworkshop. Det betyr at vi setter av noen timer til å idémyldre over eller diskutere problemstillingen din.
+                        </p>
+                    </a>
+                </div>
+                <div class="block">
+                    <div id="postIt">
+                        <div id="skill">Vi kan onloade futuristisk metadata</div>
+                        <button type= "button" name="button" class= "buttonPostit" onclick="quote()">Hva mer?</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="block">
-          <div id="postIt">
-            <div id="skill">Vi kan onloade futuristisk metadata</div>
-          </div>
-        </div>
-      </div>
-    </div>
+       
 
     <div class="boxWhite" id="tidligereWorkshops">
       <div class="middle">
@@ -118,6 +127,7 @@
       </div>
     </div>
 
+
     <div class="boxWhite">
       <div class="middle alignCenter">
         <form action="workshop.html">
@@ -142,9 +152,8 @@
       <p class="footerText">© 2017 Designhjelpen</p>
     </div>
   </footer>
-  <script src="scripts/datedInfo.js"></script>
-  <script src="scripts/quoteSkills.js"></script>
-  <script type="text/javascript" src ="scripts/slider.js"></script>
+
+
 </body>
 
 </html>
