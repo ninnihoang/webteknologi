@@ -741,15 +741,15 @@ nav {
 #torgeir:hover {
 	content: url('../img/contact/TorgeirHover.jpg');
 }
-/*														Lacking images
+
 #paul:hover {
-	content: url('../img/contact/');
+	content: url('../img/contact/PaulHover.jpg');
 }
 
 #stian:hover {
-	content: url('../img/contact/');
+	content: url('../img/contact/StianHover.jpg');
 }
-*/
+
 #moina:hover {
 	content: url('../img/contact/MoinaHover.jpg');
 }
