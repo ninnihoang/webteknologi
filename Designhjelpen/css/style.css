@@ -63,7 +63,7 @@ p {
 	text-align: left;
 }
 
-/* Styling til footer-teksten */
+/* Styling the footer text */
 p.footerText {
 	position: relative;
 	top: -30px;
@@ -73,7 +73,7 @@ p.footerText {
 	text-align: center;
 }
 
-/* Midtstilling av tekst under workshop-skjemaet */
+/* Centering text under the workshop-form*/
 p.textWorkshop {
 	max-width: 100%;
 	padding: 0;
@@ -108,7 +108,8 @@ li {
 	position: relative;
 }
 
-/* Styling av "grønn linje" under navbar-linkene på hover */
+/* Styling the green line effect under navbar links on hover*/
+/*
 li.navLink:after {
 	content: '';
 	display: block;
@@ -116,12 +117,32 @@ li.navLink:after {
 	height: 2px;
 	width: 0px;
 	background: transparent;
+	-webkit-transition: width .3s ease, background-color .5s ease;
+	-o-transition: width .3s ease, background-color .5s ease;
 	transition: width .3s ease, background-color .5s ease;
 }
 
 li.navLink:hover:after {
-	width: 10%;
+	width: 20%;
 	background: #DAE25C;
+}
+*/
+a.hoverEffect:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 2px;
+	width: 0px;
+	background: transparent;
+	-webkit-transition: width .3s ease, background-color .5s ease;
+	-o-transition: width .3s ease, background-color .5s ease;
+	transition: width .3s ease, background-color .5s ease;
+}
+
+a.hoverEffect:hover:after {
+	width: inherit;
+	background: #DAE25C;
+
 }
 
 ul {
@@ -211,7 +232,7 @@ footer{
 	width: 100%;
 }
 
-/* Styling av selve nav-bar elementet */
+/* Styling of the navbar-wrapper, setting sticky */
 nav {
 	-ms-flex-line-pack: center;
 	    align-content: center;
@@ -240,14 +261,14 @@ nav {
 	        flex-direction: column;
 }
 
-/* Styling av linje under input på workshop og bli-med skjemaene */
+/* Styling the lines under input on workshop and "bli med" forms */
 .bar {
 	display: block;
 	position: relative;
 	width: 100%;
 }
 
-/* Fargeskift av input-linjer ved aktiv-state på workshop og bli-med skjemaene */
+/* Changing colour of lines under input */
 .bar:after {
 	background:#5264AE;
 	bottom:0;
@@ -265,7 +286,7 @@ nav {
 	-webkit-transition:0.2s ease all;
 }
 
-/* Styling av tall på what.html-siden */
+/* Styling and colouring of numbers on the what.html page */
 .bigNumber {
 	color: #DAE25C;
 	font-family: 'Oswald' , sans-serif;
@@ -280,7 +301,7 @@ nav {
 
 .bold { font-weight: bold; }
 
-/* Setter bakgrunnen til grå på gitt område */
+/* Setting background to grey on given box-area */
 .boxGrey {
 	background: #EEE;
 	display: -webkit-box;
@@ -288,7 +309,7 @@ nav {
 	display: flex;
 }
 
-/* Setter bakgrunnen til grønn på gitt område */
+/* Setting background to green on given box-area */
 .boxGreen {
 	background: #DAE25C;
 	display: -webkit-box;
@@ -296,21 +317,20 @@ nav {
 	display: flex;
 }
 
-/* Setter bakgrunnen til hvit på gitt område */
+/* Setting background to white on given box-area */
 .boxWhite {
 	background: #FFF;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	width: 100%;
 }
 
-/* Generell padding på alle boks-elementene */
+/* General padding on box-elements */
 .boxGreen, .boxGrey, .boxWhite {
 	padding: 5% 0;
 }
 
-/* Setter farge på knapper og endrer dem ved :hover */
+/* Setting colour on buttons and changing it on hover */
 .buttonGreen {
 	background-color: #DAE25C;
 }
@@ -328,7 +348,7 @@ nav {
 
 .buttonPink:hover { background-color: #3B3B3B; }
 
-/* Generell styling av knappene */
+/* General styling of buttons */
 .buttonGreen, .buttonPink, .buttonGrey {
 	border: none;
 	border-radius: 50vw;
@@ -346,7 +366,7 @@ nav {
 	text-transform: uppercase;
 }
 
-/* Sentrering av knapper for workshop og bli-med skjemaene */
+/* Centering of button for workshop and "bli med" forms*/
 .buttonSubmit {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -365,7 +385,7 @@ nav {
 	        justify-content: center;
 }
 
-/* Arrangerer alle elementer i classen som kolonne */
+/* Arranging all elements inside class as column*/
 .column {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -379,7 +399,7 @@ nav {
 	        align-items: center;
 }
 
-/* Generell wrapper for nettsidene, setter flex-box for alle child-elementer */
+/* General wrapper for the webpages, setting flex-box for all child elements*/
 .container {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -396,41 +416,41 @@ nav {
 	        flex-grow: 1;
 }
 
-/* Setter margin og posisjon for alle div-elementer i workshop og bli-med skjemaene */
+/* Setting margin and position for all div-elements in workshop and "bli med" forms*/
 .formItem {
 	margin: 0 auto 120px auto;
 	position:relative;
 }
 
-/* Angir størrelsen på alle blog-relaterte bilder */
+/* Setting size of all minor blog related images */
 .imageBlog {
 	max-width: 40vw;
 }
 
-/* Angir størrelsen og sentrerer hovedbildene til hver blogpost */
+/* Setting size of all header images on blogpost pages*/
 .imageCenter {
 	max-width: 80%;
 	margin: auto;
 }
 
-/* Angir størrelsen på alle medium-størrelse bilder, eksempelvis innholdsbildene på home.html */
+/* Setting size of content-images on home.html*/
 .imageMedium {
 	max-width: 35vw;
 }
 
-/* Angir størrelsen på designhjelpen-logoen i navbaren */
+/* Setting size of the designhjelpen logo in navbar*/
 .imageNav {
 	max-width: 20vw;
 }
 
-/* Angir størrelse og styling til bildene av styremedlemmene på contact.html-siden */
+/* Setting size of all profile pictures on contact.html*/
 .imageSmall {
 	max-height: 250px;
 	max-width: 12vw;
     margin: 1.5vw 1.5vw 1.5vw 0vw;
     border-radius: 50%; /* rounded images */
 }
-/* Angir størrelse og gir bildene på what.html en solid border */
+/* Setting size and border of all images on what.html */
 .imageStep {
 	margin: auto;
 	max-width: 80vw;
@@ -438,7 +458,7 @@ nav {
 	border-radius: 5px;
 }
 
-/* Setter styling og størrelse på det midtre elementet inne i en box, eksempelvis boxGrey */
+/* Setting style and size of the middle element within box, i.e within boxGrey */
 .middle {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -454,7 +474,7 @@ nav {
 	max-width: 70vw;
 }
 
-/* Setter stylingen på elementene på navbaren */
+/*  Setting style for elements in the navbar*/
 .navigation {
 	list-style: none;
 	margin: -5px 0;
@@ -473,7 +493,7 @@ nav {
 	top: 0;
 }
 
-/* Styling av link-elementene på navbaren, eksempelvis "hva vi gjør" */
+/* Spacing of navbar-link-elements on navbar*/
 .navLink {
 	-webkit-box-flex: 1;
 	    -ms-flex-positive: 1;
@@ -481,7 +501,7 @@ nav {
 	text-align: center;
 }
 
-/* Styling av designhjelpen-logo-linken på navbaren */
+/* Spacing the designhjelpen-logo-link on the navbar */
 .navLogo {
 	-webkit-box-flex: 2;
 	    -ms-flex-positive: 2;
@@ -489,13 +509,13 @@ nav {
 	text-align: center;
 }
 
-/* Setter paddingen på gitte box-elementer til 0 for å komprimere avstand */
+/* Setting padding to given box-elements to 0 */
 .noPadding {
 	padding-top: 0;
 	padding-bottom: 0;
 }
 
-/* Setter styling for elementene på høyre side i middle-classen */
+/* Styling for right-side elements within the middle-class  */
 .right {
 	-webkit-box-align: end;
 	    -ms-flex-align: end;
@@ -510,7 +530,7 @@ nav {
 	text-align: right;
 }
 
-/* Brukes til å sette avstand fra kanten av nettsiden til innholdet i middle-classen */
+/* Used to set distance from edge of webpage to middle-class element*/
 .side {
 	-webkit-box-flex: 1;
 	    -ms-flex-positive: 1;
@@ -518,7 +538,7 @@ nav {
 	min-width: 15%;
 }
 
-/* Brukes til å skape vertikal avstand mellom to elementer */
+/* Used to create vertical space between elements*/
 .spacer {
 	height: 100px;
 	width: 100%;
@@ -529,7 +549,7 @@ nav {
 	background-color: #EEE;
 }
 
-/* Styling av tekst blokken under bildene på what.html-siden */
+/* Styling of text-block underneat images on what.html*/
 .steps {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -545,12 +565,12 @@ nav {
 	max-width: 70vw;
 }
 
-/* Styling av teksten til blogpost-sidene */
+/* Styling text on blogpost-pages*/
 .textBlog {
 	max-width: 60%;
 }
 
-/* Styling av teksten til table-elementene */
+/* Styling text on table elements*/
 .textTable {
 	max-width: 100%;
 	margin-top: 0;
@@ -558,10 +578,10 @@ nav {
     margin-right: 3vw;
 }
 
-/* Setter deler av teksten på forside-bildet til grønn */
+/* Setting part of text on main image on home.html to green*/
 .textGreen { color: #DAE25C; }
 
-/* Styling av h2 elementer under bilder på what.html siden */
+/* Styling h2 elements underneat images on what.html*/
 .textSteps {
 	position: relative;
 	margin-left: auto;
@@ -571,7 +591,7 @@ nav {
 
 .textWhite { color: #FFF; }
 
-/* Styling av paragraf-teksten under h2 elementene på what.html-siden */
+/* Styling paragraph text under h2 elements on what.html*/
 .under {
 	position: relative;
 	margin-right: auto;
@@ -579,14 +599,13 @@ nav {
 }
 /*                                                            ID's                                            */
 
-/* Setter størrelse og styling av institutt-bildet
-(satt av javascript-filen ChangePhotos.js) på who.html-siden */
+/* Setting size and styling of the institute picture (set by ChangePhotos.js) on who.html */
 #changePhotos {
 	max-width: 30vw;
 	height: auto;
 }
 
-/* Styling av facebook-ikonet i footeren */
+/* Styling of facebook-icon in footer */
 #facebook img{
 	position: relative;
 	height: 60px;
@@ -595,7 +614,7 @@ nav {
 	left: -25px;
 }
 
-/* Styling av conteineren til de sosiale elementene i footeren */
+/* Styling of container to social elements in footer */
 #footerSocial {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -605,7 +624,7 @@ nav {
 	        justify-content: center;
 }
 
-/* Styling av øverste del av footereren */
+/* Styling topmost part of footer*/
 #footerTop {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -615,14 +634,14 @@ nav {
 	        justify-content: center;
 }
 
-/* Styling av workshop og bli-med skjemaene */
+/* Styling and sizing workshop and "bli-med" forms */
 #formApplication, #formWorkshop {
 	margin: 10% auto 15% auto;
 	width: 40vw;
 	padding-bottom: 10vh;
 }
 
-/* Styling av div-elementet som inneholder hovedbildet på home.html */
+/* Styling of the div-element containing the main image on home.html */
 #imageHeader {
 	bottom: 0;
 	position: relative;
@@ -631,14 +650,15 @@ nav {
 	padding: 0;
 }
 
-/* Styling av selve hovedbildet på home.html */
+/* Setting size and width of main image on home.html */
 #imageHeader>img {
 	 max-width: 100%;
 	 height: 100vh;
-	 object-fit: cover;
+	 -o-object-fit: cover;
+	    object-fit: cover;
 }
 
-/* Styling av teksten på hovedbildet på home.html */
+/* Placement of main image text on home.html */
 #imageText {
 	left: 50%;
 	position: absolute;
@@ -649,7 +669,7 @@ nav {
 	white-space: nowrap;
 }
 
-/* Styling av instagram-ikonet i footeren */
+/* Styling of instagram-icon in footer */
 #instagram img {
 	position: relative;
 	height: 60px;
@@ -657,13 +677,13 @@ nav {
 	top: -50px;
 }
 
-/* Styling av link nær bunnen av what.html-siden */
+/* Styling of link near bottom of the what.html page */
 #linkBlue {
 	color: #5264AE;
 	font-weight: bold;
 }
 
-/* Styling av Designhjelpen-logoen i footeren */
+/* Styling of Designhjelpen-logo in footer */
 #logoBlack {
 	height: 150px;
 	width: 150px;
@@ -671,7 +691,7 @@ nav {
 	top: -75px;
 }
 
-/* Styling av postIt-lappen på home.html-siden */
+/* Styling the postIt-note on home.html */
 #postIt {
 	background:#fefabc;
 	padding:0 0 100% 0;
@@ -687,7 +707,7 @@ nav {
 	text-align: center;
 }
 
-/* Styling av teksten relatert til postIt-lappen og quoteSkills.js javascript-elementet */
+/* Styling the text related to the postIt note */
 #skill {
 	position: relative;
 	float: left;
@@ -698,7 +718,7 @@ nav {
 	padding: 0 3vw;
 }
 
-/* Styling av twitter-ikonet i footeren */
+/* Styling of twitter-icon in footer */
 #twitter img{
 	position: relative;
 	height: 60px;
@@ -709,7 +729,7 @@ nav {
 
 /*                                                          Images                                         */
 
-/* Setter forskjellige bilder ved hover på styremedlemmene i contact.html-siden */
+/* Setting different profile images on hover on contact.html*/
 #kasper, #torgeir, #paul, #stian, #moina, #henrik, #mia, #edvard {
 
 }
@@ -720,7 +740,7 @@ nav {
 #torgeir:hover {
 	content: url('../img/contact/TorgeirHover.jpg');
 }
-/*														mangler bilder
+/*														Lacking images
 #paul:hover {
 	content: url('../img/contact/');
 }
