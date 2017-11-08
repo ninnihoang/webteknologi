@@ -1101,6 +1101,9 @@ nav {
 		min-width: 0;
 	}
 
+	.sliderImg {
+		max-width: 100vw;
+	}
 	.spacer, .spacerGrey {
 		height: 2vh;
 	}
