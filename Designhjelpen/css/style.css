@@ -1048,12 +1048,12 @@ nav {
 
 	.boxGreen, .boxGrey, .boxWhite {
 		display: -webkit-box;
-		padding: 5% 0 10% 0;
+		padding: 0 0 10% 0;
 	}
 
   .buttonGreen, .buttonGrey, .buttonPink {
 		min-width: 300px;
-		margin-bottom: 5vh;
+		margin: 3vh 0 5vh 0;
 		padding: 3vh 10vw;
 	}
 
@@ -1101,6 +1101,9 @@ nav {
 		min-width: 0;
 	}
 
+	.sliderImg {
+		max-width: 100vw;
+	}
 	.spacer, .spacerGrey {
 		height: 2vh;
 	}
