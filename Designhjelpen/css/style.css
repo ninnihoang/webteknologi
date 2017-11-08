@@ -541,8 +541,7 @@ nav {
 
 /* Used to create vertical space between elements*/
 .spacer {
-	height: 100px;
-	width: 100%;
+	height: 12vh;
 }
 
 .spacerGrey {
@@ -766,6 +765,171 @@ nav {
 	content: url('../img/contact/EdvardHover.jpg');
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+
+	h1, h1.right, h1.left {
+		font-size: calc(10px + 5.4vw);
+		margin-top: 8vh;
+	}
+
+	h2, h3 {
+		margin: auto;
+	}
+
+	h1, h2, h3 {
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 6vw;
+		margin-top: 3vh;
+	}
+
+	p {
+		font-size: calc(10px + .9vw);
+		max-width:70vw;
+		margin: auto;
+		text-align: center;
+		padding: 7vh 0;
+  }
+
+	p.footerText {
+		top: -2vh;
+	}
+
+	p.textBlog {
+		max-width: 70vw;
+	}
+
+	p.textTable {
+		padding: 0;
+	}
+
+	p.mobileApplication {
+		padding: 3vh 0;
+		max-width: 70vw;
+	}
+
+	label {
+		text-align: left;
+		top: -2vh;
+		font-size: calc(11px + 0.8vw);
+	}
+
+	table {
+		padding-bottom: 7vh;
+	}
+	table tr > * {
+		display: block;
+	}
+
+	td {
+		margin-bottom: 2vh;
+	}
+
+	textarea {
+		padding-bottom: 0;
+	}
+
+	.block {
+		margin: auto;
+		padding-top: 3vh;
+	}
+
+	.boxGreen, .boxGrey, .boxWhite {
+		display: -webkit-box;
+		padding: 5% 0 10% 0;
+	}
+
+  .buttonGreen, .buttonGrey, .buttonPink {
+		min-width: 300px;
+		margin-bottom: 5vh;
+		padding: 3vh 10vw;
+	}
+
+	.formItem {
+		margin: 0 auto 8vh auto;
+	}
+
+	.left, .right {
+		margin: auto;
+		text-align: center;
+	}
+
+	.imageBlog, .imageCenter, .imageMedium {
+		max-width: 100vw;
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	input {
+		font-size: calc(16px + .8vw);
+	}
+
+	.middle {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		margin: auto;
+		text-align: center;
+		max-width: 100vw;
+	}
+
+	.noPadding {
+		padding: 5% 0;
+	}
+
+	.reverse {
+		flex-direction: column-reverse;
+	}
+
+	.side {
+		min-width: 0;
+	}
+
+	.spacer, .spacerGrey {
+		height: 2vh;
+	}
+
+	#dhLogo {
+		max-width: 40vw;
+	}
+
+	#formWorkshop, #formApplication {
+		width: 70vw;
+		padding-bottom: 0;
+	}
+
+	#formApplication {
+		margin-bottom: 20%;
+	}
+
+	#logoBlack {
+		width:70px;
+		position: relative;
+		height: auto;
+		top: -50%;
+	}
+
+	#twitter img, #facebook img, #instagram img {
+		top: -50%;
+	}
+
+	#twitter img {
+		right: -12vw;
+	}
+
+	#facebook img {
+		left: -12vw;
+	}
+
+	#postIt {
+		margin: auto;
+	}
+
 
 }
