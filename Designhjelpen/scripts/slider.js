@@ -15,12 +15,12 @@ function showSlider(n){
   for(i = 0; i < x.length; i++){
     x[i].style.display = "none" ; // hide images
   }
-    
+
   x[sliderIndex-1].style.display = "block"; //show image with given slideIndex
-    
-    /*
+
+/*
     setTimeout(showSlider, 4000);
-    sliderIndex ++; 
-    */
-  
+    sliderIndex ++;
+*/
+
 }
