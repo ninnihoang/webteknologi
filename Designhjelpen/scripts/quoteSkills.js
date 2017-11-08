@@ -3,5 +3,9 @@ let adjektiv = ['ikke-linjære', 'fremtidsrettede', 'ikke-visualiserbare', 'post
 let substantiv = ['brukeropplevelser', 'workshops', 'produkter', 'gjennombrudd', 'problemstillinger', 'utstillinger', 'systemer', 'UIs', 'start-ups', 'AI', 'konsepter', 'design thinkers', 'boot camps', 'iterasjoner']
 
 
+function quote(){
+    document.getElementById("skill").innerHTML = ('Vi kan ' + verb[Math.floor(Math.random() * verb.length)] + ' ' + adjektiv[Math.floor(Math.random() * adjektiv.length)] + ' ' + substantiv[Math.floor(Math.random() * substantiv.length)]);
+    
+}
 
-document.getElementById("skill").innerHTML = ('Vi kan ' + verb[Math.floor(Math.random() * verb.length)] + ' ' + adjektiv[Math.floor(Math.random() * adjektiv.length)] + ' ' + substantiv[Math.floor(Math.random() * substantiv.length)]);
+quote();

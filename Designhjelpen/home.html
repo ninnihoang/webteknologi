@@ -2,12 +2,16 @@
 <html lang="nb">
 
 <head>
+
     <title>Designhjelpen | Hjem</title>
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="img/logoSmall.png" />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="scripts/datedInfo.js"></script>
+    <script src="scripts/quoteSkills.js" async></script>
+    <script type="text/javascript" src="scripts/slider.js" async></script>
+
 </head>
 
 <body onload="showHide();">
@@ -52,6 +56,7 @@
             </div>
             <div class="side"></div>
         </div>
+
         <!-- ********************************************************************************************************************************* -->
         <div class="boxGrey">
             <div class="middle">
@@ -68,17 +73,33 @@
                 <div class="block">
                     <div id="postIt">
                         <div id="skill">Vi kan onloade futuristisk metadata</div>
+                        <button type="button" name="button" class="buttonPostit" onclick="quote()">Hva mer?</button>
                     </div>
                   </div>
             </div>
+
         </div>
+
 
         <div class="boxWhite">
             <div class="middle">
                 <div class="left">
-                    <img class="imageMedium" src="img/blog.jpg" alt='ok stemning'>
+                    <img class="sliderImg" src="img/slider_img/slider_img1.jpg" alt='slider_img1'>
+                    <img class="sliderImg" src="img/slider_img/slider_img2.jpg" alt='slider_img2'>
+                    <img class="sliderImg" src="img/slider_img/slider_img3.jpg" alt='slider_img3'>
+                    <img class="sliderImg" src="img/slider_img/slider_img4.jpg" alt='slider_img4'>
+                    <img class="sliderImg" src="img/slider_img/slider_img5.jpg" alt='slider_img5'>
+                    <img class="sliderImg" src="img/slider_img/slider_img6.jpg" alt='slider_img6'>
+
+                    <a id="prev" onclick="plusSlider(-1)">
+                        <div id="arrowLeft">&#10094;</div>
+                    </a>
+                    <a id="next" onclick="plusSlider(1)">
+                        <div id="arrowRight">&#10095;</div>
+                    </a>
                 </div>
-                <div class="block">
+                <div>
+                    <div>
                         <a class="column right" href="blog.html">
                             <h2>
                                 Tidligere workshops
@@ -109,6 +130,7 @@
             </div>
         </div>
 
+
         <div class="boxWhite">
             <div class="middle alignCenter">
                 <form action="workshop.html">
@@ -134,11 +156,7 @@
         </div>
     </footer>
 
-    <script src="scripts/quoteSkills.js"></script>
+
 </body>
-
-
-
-
 
 </html>
