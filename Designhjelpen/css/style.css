@@ -543,7 +543,7 @@ nav {
 
 /* Setting size of slide-image on home.html*/
 
-.sliderImg {
+.imageSlider {
     max-width: 35vw;
 }
 
@@ -1135,9 +1135,11 @@ nav {
 		margin: 0 auto 8vh auto;
 	}
 
+
 	.imageBlog,
 	.imageCenter,
-	.imageMedium {
+	.imageMedium,
+  .imageSlider {
 		max-width: 100vw;
 	}
 
@@ -1162,13 +1164,17 @@ nav {
 		max-width: 100vw;
 	}
 
+/* Eliminates the padding for the uppermost right side paragraph on what.html */
 	.mobileNoPadding {
 		padding: 0;
 	}
+
 	.noPadding {
 		padding: 5% 0;
 	}
 
+/* Flips the direction of the second content box on the blog.html page
+  so as to create a "image-text-image-text ..." look */
 	.reverse {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: reverse;
@@ -1178,10 +1184,6 @@ nav {
 
 	.side {
 		min-width: 0;
-	}
-
-	.sliderImg {
-		max-width: 100vw;
 	}
 
 	.spacer,
