@@ -1,3 +1,10 @@
+/*
+FILE NAME: scripts/slider.js
+WRITTEN BY: Mia Edvardsen
+WHEN: November 2017
+PURPOSE: Slideshow of earlier workshops
+*/
+
 var sliderIndex = 1;
 showSlider (sliderIndex); // display first image
 
