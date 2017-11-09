@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>P2</title>
+	<meta charset="utf-8" />
+	<link link rel="stylesheet" href="css/style.css">	
+</head>
+
+<body>
+	<header>
+		<h1>P2 – Design </h1>
+		<p class="bold">Medlemmer: Bendik, Kasper, Caspar, Ninni and Mia</p>
+		<p>Dato: 09.10.2017</p>
+	</header>
+
+
+	<div id="admin">
+		<h2>Administrative details</h2>
+		<p class="bold">
+			Client: Designhjelpen, a student organization
+		</p>
+		<p class="bold">
+			Contact Person: Torgeir Bell, external consultant
+		</p>
+	</div>
+
+	<div id="navigation">
+		<h2>Navigation structure</h2>
+		<p>
+			The website should be easily navigable while having a mix of hierarchical and linear structure , and thus the inclusion of an easily visible navigation bar/navbar residing at the top of every page seemed logical. A considerable amount of the navigation will happen through this navbar.
+			The navbar contain links to:
+		</p>
+		<ul>
+			<li>Designhjelpen: Home page (home.html)</li>
+			<li>Hva vi gjør (what.html)</li>
+			<li>Hvem vi er (who.html)</li>
+			<li>Kontakt (contact.html)</li>
+			<li>Søk om workshop (workshop.html)</li>
+		</ul>
+		<p>
+			Some pages, namely the “Bli med” and “Blogg” pages, follow a more local hierarchical structure and are nested/linked within other pages making them inaccessible directly from all pages by the navbar. This is both more logical (theme and page-wise) as well as more practical than having every page displayed, and potentially overcrowding the navbar.
+		</p>
+		<p>
+			The “Bli med” (application.html) page link usually resides within the “Kontakt” page, except when applications are open, which is usually at the beginning of each autumn semester. At that time an application page-link will be easily visible on the homepage. 
+
+		</p>
+		<p>
+			Additionally, both the Home page and the “Hva vi gjør” page (what.html) will also contain a link to the “Blogg” page (blog.html), which, in turn, will include links to specific blog posts (blogPost.html).
+		</p>
+		<img id="navImg" src="images/navigation.png" alt="Flowchart of the navigation structure">
+	</div>
+
+	<div id="purpose">
+		<h2>Purpose, goals and audience</h2>
+		<p>
+			The purpose of the website is to provide information about Designhjelpen and a way for companies to get in contact with them. The goal of the website is therefore to be a clear and intriguing information channel as well as to make it easy for clients to get in contact. In addition, we want to create an easy way for companies to apply for a workshop through the website. The target audience is companies and startups who are looking for design input or want to increase their knowledge and skill in design, especially in interactive design, product design and service design. This includes companies or startups who need inspiration and guidance on a project. They could also just be interested in getting a better understanding of design. Other typical users are students who are seeking help for a school assignment and could benefit from a design workshop. They could also be students who are interested in learning about and/ or becoming a member of Designhjelpen.
+
+		</p>
+	</div>
+
+	<div id="layout">
+		<h2>Page layout and appearance</h2>
+		<p>
+			The website should look visually appealing and professional, as it also functions as promotion for Designhjelpen. We wanted to use a color scheme that fits the graphic profile of Designhjelpen and use graphical elements and images to make the website visually appealing and professional.
+
+		</p>
+		<h3>Font</h3>
+		<p>
+			The typeface used corresponds with the graphical profile of Designhjelpen.   The typefaces used are Oswald and Verdana. The header &lt;h1&gt; is Oswald; font-weight: bold; font-size: 100px. The subheader &lt;h2&gt; is Oswal; font-weight: bold; font-size: 56px. The lead paragraph &lt;p class=”lead”&gt; is Verdana; font-weight: regular; font-size 36px. The paragraph &lt;p&gt; is Verdana; font-weight: regular; font-size 26px.
+
+		</p>
+		<h3>Colour</h3>
+		<p>
+			The colors are also taken from the graphical profile of Designhjelpen, namely #FFFFFF (white), #EEEEEE (light grey), #3B3A3A (dark grey), #DAE25C (green), #78B1E0 (blue), #C04E83 (purple). The background is white and light grey. The navbar is dark grey. The logo and the links on the navbar is white for good contrast. The headers, subheaders, lead paragraphs and paragraphs are dark grey. Most decorative elements are green, as well as the “Bli med”–link/ button. Blue is used for links to other pages and purple is used for the “Søk om workshop”–button to make the button standout.
+
+		</p>
+
+		<h3>Logo</h3>
+		<p>
+			The logo is placed on the top left corner of the navbar and also functions as a home button.
+
+		</p>
+		<h3>Navigation bar</h3>
+		<p>
+			The navbar is sticky. On the home page the navbar will appear on the bottom of the image until scrolled to the top. On the rest of the website the navbar is alway visible on the top of the screen. We want the navbar to always be visible for easy access. The menu is restricted to only four categories for easy navigation: “Hva vi gjør”, “Hvem vi er”, “Kontakt” and “Søk om workshop”. We made sure that the first three categories doesn’t overlap for clear navigation, and we added “Søk om workshop” on the navbar because the main goal for the target audience, specifically businesses, are to apply for a workshop.
+
+		</p>
+		<h3>Footer</h3>
+		<p>
+			The footer is on the bottom of all pages. It contains the copyright notice and is used to frame the website and create a visual boundary.
+
+		</p>
+	</div>
+
+	<div id="content">
+		<h2>Content</h2>
+		<h3>Hjem/ Home</h3>
+		<p>
+			The Home page (home.html)  is the first page the visitor sees when he enters the website. The home page should give an overview of Designhjelpen. It should be clear for first time visitors what the main purpose of the website is, as well as giving them an idea of what type of service Designhjelpen provides. This page should also make it easy for visitors who already know about Designhjelpen, and are simply looking for applying for a workshop.
+
+		</p>
+		<p>
+			The home page will have large image that covers the screen with the title: “Trenger du design hjelp?” / (“Do you need design help?”). This shows the main purpose of the website. Further down the website the visitor can get an overview over the website's content. There will be three blocks of information, a “quote–box” that will randomly show a quote from one of the workshops, and lastly a button for applying for a workshop. The information blocks will give the visitor an insight in the three main pages on the site: “Hva vi gjør”, “Tidligere workshops/ Blogg” and “Hvem vi er”. The blocks can be clicked for further information, and will lead the visitor to their respective pages.
+
+		</p>
+		<ul>
+			<li>Image/ video</li>
+			<li>(Bli med i Designhjelpen) – only during the start of each semester</li>
+			<li>Hva vi gjør</li>
+			<li>Quote</li>
+			<li>Tidligere workshop / Blogg</li>
+			<li>Hvem vi er</li>
+			<li>Søk om workshop</li>
+		</ul>
+		<div class="imgContainer">
+			<div class="imgLeft"> <img src="images/home.png" alt="Home page"><figcaption>Home page</figcaption> </div>
+			<div class="imgRight"> <img src="images/homeAlternative.png" alt="Alternative home page"><figcaption>Home page at the start of the semester</figcaption> </div>
+		</div>
+		<h3>Hva vi gjør/ What we do</h3>
+		<p>
+			One of the goals was to be a clear and intriguing information channel. We therefore plan on making a guide on how to apply for a workshop and what to expect from that workshop afterwards, putting emphasis on the benefits of doing a workshop with the help from Designhjelpen. The “Hva vi gjør” page (what.html) contains information about the process of having a workshop with Designhjelpen. It will show a step by step guide of the process with drawn illustrations. After the guide we will put a link to the blog page, where visitors can get a better understanding of what Designhjelpen does. At the end we also added a button to the “Søk om workshop” page. The content for this page looks like this:
+
+		</p>
+		<ul>
+			<li>Info about workshops</li>
+			<li>Step-by-step guide on how to apply for a workshop</li>
+			<li>Link to previous workshops</li>
+			<li>“Søk om workshop”–button / Apply for a workshop</li>
+		</ul>
+		<img class="imgCenter" src="images/what.png" alt="What we do">
+		<h3>Hvem vi er/ Who we are</h3>
+		<p>
+			The “Hvem vi er” page (who.html) contains information about the members of Designhjelpen, as well as general information about Industrial Design at NTNU. This page is meant to give visitors an idea of who the people behind Designhjelpen are and what their backgrounds are. This page will contain an image of the members of Designhjelpen and a picture of the Institute of Design. The content of the page looks like this:
+
+		</p>
+		<ul>
+			<li>Information about the members of Designhjelpen</li>
+			<li>About Industrial Design at NTNU</li>
+		</ul>
+		<img class="imgCenter" src="images/who.png" alt="Who we are">
+		<h3>Kontakt/ Contact</h3>
+		<p>
+			Our goal was to give the visitors the opportunity to get in contact with Designhjelpen. The “Kontakt” page (contact.html) serves the purpose to give contact information to the visitors. This page therefore contains contact information such as email and address at the top of the page, as well as contact information to each of the board members. To fulfill our goal of making it easy for users to apply for a job at Designhjelpen, we added the possibility to apply for a job from this page. Since Designhjelpen only hires new people once every semester, the button will be somewhat hidden at the bottom of this page. However, at the start of each semester it will show up at the top of  the home page. The content of the page looks like this:
+
+		</p>
+		<ul>
+			<li>General contact information</li>
+			<li>Contact information to each of the board members</li>
+			<li>“Søk om å bli med i Designhjelpen”–button / Apply for a job</li>
+		</ul>
+		<img class="imgCenter" src="images/contact.png" alt="Contact">
+		<h3>Søk om workshop/ Workshop</h3>
+		<p>
+			The “Workshop” page (workshop.html) is a form for visitors that want to apply for a workshop. One of our goals was to make it easy for the visitors to get in contact with Designhjelpen. It was also important that it was easy to apply for a workshop as this is the main service Designhjelpen provides. The contact form makes it easy for the visitors to provide the information Designhjelpen need, and in turn makes it faster to get in contact and organize a workshop with Designhjelpen. The form consist of contact information and five questions that specify who the appliers are, what their project is, how far they have come in the process, and what they need help with. 
+
+		</p>
+		<img class="imgCenter" src="images/workshop.png" alt="Workshop">
+		<h3>Bli med i Designhjelpen/ Application</h3>
+		<p>
+			The “Bli med“ page (application.html) contains information about how it is to work at Designhjelpen as well as an application form. The form contains question about what year they are in, and an application text. This page is meant to be mostly used in the start of each semester, when Designhjelpen hires new member, but is accessible throughout the year.
+
+		</p>
+		<img class="imgCenter" src="images/application.png" alt="Application">
+		<h3>Blogg/ Blog and blog post</h3>
+		<p>
+			The “Blogg” page (blog.html) is an informative page about previous workshops and other information that Designhjelpen wants to share. Through the blog the visitors can see the work Designhjelpen has done in the past, providing useful information to potential clients. To clarify, the blog.html is an overview of all the blog posts that has been published, and the blogpost.html is an example of a blog post itself. The blog post will contain pictures of the workshop, some text about what happened during the workshop, and an comment from the client. The blogs therefore acts as an information channel that further provides more insight into the true value of having a workshop with Designhjelpen.
+
+		</p>
+		<div class="imgContainer">
+			<div class="imgLeft"> <img  src="images/blog.png" alt="Blog page"> <figcaption>Blog page</figcaption></div>
+			<div class="imgRight"> <img  src="images/blogPost.png" alt="Blog post "> <figcaption>Blog posts </figcaption></div>
+
+		</div>
+	</div>
+
+	<div id="minimum">
+		<h2>Minimum requirements</h2>
+		<p>
+			We plan on using JavaScript programming for four different purposes; checking that the application form is properly filled in, such as checking that the email address is correctly formatted and that the phone number only contains digits; a skill generator that randomly matches a verb, an adjective and a noun to form a hopefully fun skill, an admission button that only show up at the beginning of each semester when Designhjelpen recruits new people, and an image that changes based on the time of day, displaying an appropriate picture of the department of design. 
+
+		</p>
+		<p>
+			The intention with our planned applications of JS, except from the form validator, is to make a more engaging, welcoming and fun website, lowering the barrier for people to make contact with Designhjelpen. While the skills displayed will probably not be quite accurate, chances are they will make people pay a bit more attention, and expect not only a good result from a workshop, but also to have a good time. The changing header image and skill will also help make the website more alive, hopefully making people pay a bit more attention.
+
+		</p>
+		<p>
+			As Designhjelpen is only open to applications at the beginning of each semester, a button with the text “I want to join!” would be misleading most of the year, but not having one would be a problem during recruitment periods. Therefore, we plan on making it appear only in january and august (or possibly another timespan, which is up to Designhjelpen), while being hidden in other months. This should also be possible through Javascript.
+
+		</p>
+	</div>
+
+	<div id="plan">
+		<h2>Plan</h2>
+		<p>
+			We will be using the organizational scheme below to create and store our files and using work division tables to control who is responsible for what and for setting deadlines.
+
+		</p>
+		<h3>Organizatorial scheme</h3>
+		<p>
+			All of the following files will be collected in a folder named “project”, which will be created at the beginning of the coding phase of the project.
+
+		</p>
+		<h3>List of files and folders</h3>
+		<ul>
+			<li class="bold">HTML/</li>
+			<ul class="subList">
+				<li>home.html</li>
+				<li>what.html</li>
+				<li>who.html</li>
+				<li>contact.html</li>
+				<li>workshop.html</li>
+				<li>application.html</li>
+				<li>blog.html</li>
+				<li>blogPost.html</li>
+			</ul>
+			<li class="bold">img/
+				<ul class="subList">
+					<li>logo.png</li>
+					<li>homepage_image1.jpg</li>
+					<li>homepage_image2.jpg</li>
+					<li>step1.png</li>
+					<li>step2.png</li>
+					<li>step3.png</li>
+					<li>group.png</li>
+					<li>id1.jpg</li>
+					<li>id2.jpg</li>
+					<li>id3.jpg</li>
+					<li>member1.jpg</li>
+					<li>member2.jpg</li>
+					<li>member3.jpg</li>
+					<li>member4.jpg</li>
+					<li>member5.jpg</li>
+					<li>member6.jpg</li>
+					<li>member7.jpg</li>
+					<li>blog_image1.png</li>
+					<li>blog_image2.png</li>
+					<li>blog_image3.png</li>
+					<li>blog_image4.png</li>
+					<li>blog_image5.png</li>
+				</ul> 
+			</li> 
+			<li class="bold">scripts/
+				<ul class="subList">
+					<li>validateForms.js</li>
+					<li>quoteSkills.js</li>
+					<li>changePhotos.js</li>
+					<li>datedInfo.js</li>
+				</ul>
+			</li>
+			<li class="bold">css/
+				<ul class="subList">
+					<li>style.css</li>
+				</ul>
+			</li> 
+		</ul>
+		<h3>Work division and deadlines</h3>
+		<table>
+			<thead>
+				<tr>
+					<td>Filename</td>
+					<td>Description</td>
+					<td>In charge</td>
+					<td>Deadline</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>home.html</td>
+					<td>The home page</td>
+					<td>Caspar</td>
+					<td>20.10.17</td>
+				</tr>
+				<tr>
+					<td>what.html</td>
+					<td>Information about what Designhjelpen do, how it is organized and what to expect.</td>
+					<td>Mia</td>
+					<td>20.10.17</td>
+				</tr>
+				<tr>
+					<td>who.html</td>
+					<td>A page that explains who their members are.</td>
+					<td>Caspar</td>
+					<td>20.10.17</td>
+				</tr>
+				<tr>
+					<td>contact.html</td>
+					<td>Contact information for Designhjelpen and all its members.</td>
+					<td>Ninni</td>
+					<td>20.10.17</td>
+				</tr>
+				<tr>
+					<td>workshop.html</td>
+					<td>An application form for a workshop intended for companies</td>
+					<td>Ninni</td>
+					<td>20.10.17</td>
+				</tr>
+				<tr>
+					<td>application.html</td>
+					<td>An application form for a job at Designhjelpen</td>
+					<td>Bendik</td>
+					<td>20.10.17</td>
+				</tr>
+				<tr>
+					<td>blog.html</td>
+					<td>A blog page</td>
+					<td>Kasper</td>
+					<td>20.10.17</td>
+				</tr>
+				<tr>
+					<td>blogPost.html</td>
+					<td>A blog post</td>
+					<td>Kasper</td>
+					<td>20.10.17</td>
+				</tr>
+				<tr>
+					<td>validateForms.js</td>
+					<td>JavaScript used to validate the information by users.</td>
+					<td>Ninni</td>
+					<td>01.11.17</td>
+				</tr>
+				<tr>
+					<td>quoteSkills.js</td>
+					<td>JavaScript used to generate a random skill displayed on the home page.</td>
+					<td>Caspar</td>
+					<td>01.11.17</td>
+				</tr>
+				<tr>
+					<td>changePhotos.js</td>
+					<td>JavaScript used to change photo based on the time of day.</td>
+					<td>Mia</td>
+					<td>01.11.17</td>
+				</tr>
+				<tr>
+					<td>dateInfo.js</td>
+					<td>JavaScript used to make information show up based on a specific time of the year. </td>
+					<td>Kasper</td>
+					<td>01.11.17</td>
+				</tr>
+				<tr>
+					<td>style.css</td>
+					<td>The CSS file containing all styling for the website.</td>
+					<td>Bendik</td>
+					<td>06.11.17</td>
+				</tr>
+				<tr>
+					<td>Final check</td>
+					<td>Double checking each file for errors, checking the JavaScript and CSS.</td>
+					<td>All</td>
+					<td>10.11.17</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>
