@@ -52,13 +52,19 @@ h2 {
 
 h2#blog,
 h2#workshop,
-h2#who {
+h2#who,
+h2#blog1,
+h2#blog2,
+h2#blog3 {
 	padding-bottom: 3px;
 }
 
 h2#blog:hover,
 h2#workshop:hover,
-h2#who:hover {
+h2#who:hover,
+h2#blog1:hover,
+h2#blog2:hover,
+h2#blog3:hover {
 	border-bottom: 3px solid #DAE25C;
 	padding-bottom: 0;
 }
