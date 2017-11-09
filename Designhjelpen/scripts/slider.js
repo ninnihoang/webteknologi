@@ -8,7 +8,7 @@ function plusSlider(n){
 
 function showSlider(n){
   var i = 0;
-  var x = document.getElementsByClassName("sliderImg");
+  var x = document.getElementsByClassName("imageSlider");
   if(n > x.length){sliderIndex = 1} //reset the slideIndex
   if(n < 1){sliderIndex = x.length};
   console.log(n); // show the last image
