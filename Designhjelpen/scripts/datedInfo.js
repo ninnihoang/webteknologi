@@ -1,3 +1,10 @@
+/*
+FILE NAME: scripts/datedInfo.js
+WRITTEN BY: Kasper Rise
+WHEN: November 2017
+PURPOSE: Makes information show up based on a specific time of the year
+*/
+
 function showHide(){
           
     var div_one = document.getElementById('bliMed');

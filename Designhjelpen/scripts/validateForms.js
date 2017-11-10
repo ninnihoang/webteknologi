@@ -1,3 +1,10 @@
+/*
+FILE NAME: scripts/validateForms.js
+WRITTEN BY: Ninni Kim Nhi Hoang
+WHEN: November 2017
+PURPOSE: Validates the workshop and the application forms
+*/
+
 var contact = document.getElementById("contact");
 var telephone = document.getElementById("telephone");
 var email = document.getElementById("email");
@@ -15,7 +22,7 @@ function formValidation() {
         alert("Vennligst fyll inn en gyldig e-postadresse");
         email.focus();
     } else if (website !== null && website.checkValidity() === false) {
-        alert("Vennligst fyll inn en gyldig nettside");
+        alert("Vennligst fyll inn en gyldig nettside (Husk http://   )");
         website.focus();
     } else {
         alert("Takk for din henvendelse! \n Vi vil kontakte deg så fort som mulig!")

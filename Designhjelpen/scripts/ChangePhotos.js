@@ -1,3 +1,10 @@
+/*
+FILE NAME: scripts/ChangePhotos.js
+WRITTEN BY: Mia Edvardsen
+WHEN: November 2017
+PURPOSE: Changes photo based on the time of day
+*/
+
 var date = new Date();
 var hour = date.getHours();
 var photosNow = document.getElementById("changePhotos");

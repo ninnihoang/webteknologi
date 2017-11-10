@@ -1,3 +1,9 @@
+/*
+FILE NAME: scripts/slider.js
+WRITTEN BY: Mia Edvardsen
+WHEN: November 2017
+PURPOSE: Slideshow of earlier workshops
+*/
 
 var timer = null;
 
@@ -19,7 +25,7 @@ function minusSlider(){
 
 function showSlider(n){
   var i = 0;
-  var x = document.getElementsByClassName("sliderImg");
+  var x = document.getElementsByClassName("imageSlider");
   if(n > x.length){sliderIndex = 1} //reset the slideIndex
   if(n < 1){sliderIndex = x.length};
   console.log(n); // show the last image
