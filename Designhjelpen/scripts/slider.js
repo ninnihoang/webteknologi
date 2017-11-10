@@ -36,7 +36,7 @@ function showSlider(n){
   
   x[sliderIndex-1].style.display = "block"; //show image with given sliderIndex
     
-  timer = setInterval(plusSlider, 8000);
+  timer = setInterval(plusSlider, 4000);
     
 }
 
