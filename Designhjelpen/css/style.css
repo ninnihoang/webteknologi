@@ -345,9 +345,10 @@ nav {
     -ms-flex-pack: end;
     justify-content: flex-end;
 }
+
 .bigNav {
-        display: block;
-    }
+    display: block;
+}
 
 .bold {
     font-weight: bold;
@@ -607,10 +608,12 @@ nav {
     margin: auto;
     max-width: 70vw;
 }
-.mobile_imageNav{
+
+.mobile_imageNav {
     max-width: 10vw;
 }
-.mobile_navLogo{
+
+.mobile_navLogo {
     -webkit-box-flex: 2;
     -ms-flex-positive: 2;
     flex-grow: 1;
@@ -623,8 +626,8 @@ nav {
 }
 
 .mobileNav {
-        display: none;
-    }
+    display: none;
+}
 
 
 
@@ -1124,12 +1127,12 @@ nav {
     .bigNav {
         display: none;
     }
-    
+
     .bigNumber {
         padding: 0;
     }
-    
-    
+
+
 
     .block {
         margin: auto;
@@ -1193,7 +1196,7 @@ nav {
         text-align: center;
         max-width: 100vw;
     }
-    
+
     .mobileNav {
         display: block;
     }
@@ -1235,8 +1238,8 @@ nav {
     .under {
         padding-bottom: 0;
     }
-    
-    
+
+
 
     /*                                                            ID's                                            */
     #dhLogo {
@@ -1278,5 +1281,5 @@ nav {
         top: -50%;
     }
 
-    
+
 }
