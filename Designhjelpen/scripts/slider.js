@@ -1,8 +1,19 @@
-var sliderIndex = 1;
-showSlider (sliderIndex); // display first image
 
-function plusSlider(n){
-  showSlider (sliderIndex += n);
+var timer = null;
+
+var sliderIndex = 1;
+
+window.onload= showSlider(sliderIndex);
+
+
+function plusSlider(){
+  showSlider (sliderIndex += 1);
+    clearTimeout(timer);
+    
+}
+function minusSlider(){
+  showSlider (sliderIndex -= 1);
+    clearTimeout(timer);
 }
 
 
@@ -16,11 +27,11 @@ function showSlider(n){
     x[i].style.display = "none" ; // hide images
   }
 
-  x[sliderIndex-1].style.display = "block"; //show image with given slideIndex
-
-/*
-    setTimeout(showSlider, 4000);
-    sliderIndex ++;
-*/
-
+  
+  x[sliderIndex-1].style.display = "block"; //show image with given sliderIndex
+    
+  timer = setInterval(plusSlider, 8000);
+    
 }
+
+

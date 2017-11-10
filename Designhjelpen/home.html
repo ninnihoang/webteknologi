@@ -10,11 +10,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="scripts/datedInfo.js"></script>
     <script src="scripts/quoteSkills.js" async></script>
-    <script type="text/javascript" src="scripts/slider.js" async></script>
+    <script type="text/javascript" src="scripts/slider.js" async ></script>
 
 </head>
 
-<body onload="showHide();">
+<body onload="showHide();" >
     <header>
         <div id="imageHeader">
             <img src="img/main.jpg" alt="Header image">
@@ -24,8 +24,8 @@
             </div>
         </div>
     </header>
-
-    <nav>
+    
+    <nav class="bigNav">
         <ul class="navigation bold">
             <li class="navLogo">
                 <a href="home.html"><img class="imageNav" src="img/logo.png" id='homeLogo' alt="Designhjelpen"></a>
@@ -36,6 +36,18 @@
             <li class="navLink"><a class="hoverEffect" href="workshop.html">Søk om workshop</a></li>
         </ul>
     </nav>
+    <nav class="mobileNav">
+        <ul class="navigation bold">
+            <li class="mobile_navLogo">
+                <a href="home.html"><img class="mobile_imageNav" src="img/logoSmall.png" alt="Designhjelpen"></a>
+            </li>
+            <li class="navLink"><a class="hoverEffect" href="what.html">Hva</a></li>
+            <li class="navLink"><a class="hoverEffect" href="who.html">Hvem</a></li>
+            <li class="navLink"><a class="hoverEffect" href="contact.html">Kontakt</a></li>
+            <li class="navLink"><a class="hoverEffect" href="workshop.html">Workshop</a></li>
+        </ul>
+    </nav>
+    
 
     <div class="container">
         <!--                                                                 Til alternativ hjemside                                            -->
@@ -91,10 +103,10 @@
                     <img class="sliderImg" src="img/slider_img/slider_img5.jpg" alt='slider_img5'>
                     <img class="sliderImg" src="img/slider_img/slider_img6.jpg" alt='slider_img6'>
 
-                    <a id="prev" onclick="plusSlider(-1)">
+                    <a id="prev" onclick="minusSlider()">
                         <div id="arrowLeft">&#10094;</div>
                     </a>
-                    <a id="next" onclick="plusSlider(1)">
+                    <a id="next" onclick="plusSlider()">
                         <div id="arrowRight">&#10095;</div>
                     </a>
                 </div>
