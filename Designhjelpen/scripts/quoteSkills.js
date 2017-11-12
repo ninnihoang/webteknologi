@@ -11,8 +11,8 @@ let substantiv = ['brukeropplevelser', 'workshops', 'produkter', 'gjennombrudd',
 
 
 function quote(){
-    document.getElementById("skill").innerHTML = ('Vi kan ' + verb[Math.floor(Math.random() * verb.length)] + ' ' + adjektiv[Math.floor(Math.random() * adjektiv.length)] + ' ' + substantiv[Math.floor(Math.random() * substantiv.length)]);
-    
+  document.getElementById("skill").innerHTML = ('Vi kan ' + verb[Math.floor(Math.random() * verb.length)] + ' ' + adjektiv[Math.floor(Math.random() * adjektiv.length)] + ' ' + substantiv[Math.floor(Math.random() * substantiv.length)]);
+
 }
 
 quote();

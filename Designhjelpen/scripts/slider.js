@@ -6,23 +6,18 @@ PURPOSE: Slideshow of earlier workshops
 */
 
 var timer = null;
-
 var sliderIndex = 1;
 
 window.onload= showSlider(sliderIndex);
 
-
 function plusSlider(){
   showSlider (sliderIndex += 1);
-    clearTimeout(timer);
-    
+  clearTimeout(timer);
 }
 function minusSlider(){
   showSlider (sliderIndex -= 1);
-    clearTimeout(timer);
+  clearTimeout(timer);
 }
-
-
 function showSlider(n){
   var i = 0;
   var x = document.getElementsByClassName("imageSlider");
@@ -32,12 +27,6 @@ function showSlider(n){
   for(i = 0; i < x.length; i++){
     x[i].style.display = "none" ; // hide images
   }
-
-  
   x[sliderIndex-1].style.display = "block"; //show image with given sliderIndex
-    
   timer = setInterval(plusSlider, 4000);
-    
 }
-
-
